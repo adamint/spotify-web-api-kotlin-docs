@@ -1,0 +1,5 @@
+R_DEF: Internal format may change without notice
+local
+id progress_overlay
+id progress_wheel
+layout spotify_pkce_auth_layout
