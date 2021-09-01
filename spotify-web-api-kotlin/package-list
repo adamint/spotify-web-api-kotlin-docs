@@ -693,7 +693,7 @@ $dokka.location:com.adamratzman.spotify.models/AudioSegment/pitches/#/PointingTo
 $dokka.location:com.adamratzman.spotify.models/AudioSegment/start/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-audio-segment/start.html
 $dokka.location:com.adamratzman.spotify.models/AudioSegment/timbre/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-audio-segment/timbre.html
 $dokka.location:com.adamratzman.spotify.models/AuthenticationError///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-authentication-error/index.html
-$dokka.location:com.adamratzman.spotify.models/AuthenticationError/AuthenticationError/#kotlin.String#kotlin.String/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-authentication-error/-authentication-error.html
+$dokka.location:com.adamratzman.spotify.models/AuthenticationError/AuthenticationError/#kotlin.String#kotlin.String?/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-authentication-error/-authentication-error.html
 $dokka.location:com.adamratzman.spotify.models/AuthenticationError/description/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-authentication-error/description.html
 $dokka.location:com.adamratzman.spotify.models/AuthenticationError/error/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-authentication-error/error.html
 $dokka.location:com.adamratzman.spotify.models/CollectionUri.Companion///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-collection-uri/-companion/index.html
@@ -3317,6 +3317,13 @@ $dokka.location:com.adamratzman.spotify.utils/Market.FR/marketName/#/PointingToD
 $dokka.location:com.adamratzman.spotify.utils/Market.FR/name/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r/name.html
 $dokka.location:com.adamratzman.spotify.utils/Market.FR/numeric/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r/numeric.html
 $dokka.location:com.adamratzman.spotify.utils/Market.FR/ordinal/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r/ordinal.html
+$dokka.location:com.adamratzman.spotify.utils/Market.FROM_TOKEN///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r-o-m_-t-o-k-e-n/index.html
+$dokka.location:com.adamratzman.spotify.utils/Market.FROM_TOKEN/alpha3/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r-o-m_-t-o-k-e-n/alpha3.html
+$dokka.location:com.adamratzman.spotify.utils/Market.FROM_TOKEN/assignment/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r-o-m_-t-o-k-e-n/assignment.html
+$dokka.location:com.adamratzman.spotify.utils/Market.FROM_TOKEN/marketName/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r-o-m_-t-o-k-e-n/market-name.html
+$dokka.location:com.adamratzman.spotify.utils/Market.FROM_TOKEN/name/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r-o-m_-t-o-k-e-n/name.html
+$dokka.location:com.adamratzman.spotify.utils/Market.FROM_TOKEN/numeric/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r-o-m_-t-o-k-e-n/numeric.html
+$dokka.location:com.adamratzman.spotify.utils/Market.FROM_TOKEN/ordinal/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-r-o-m_-t-o-k-e-n/ordinal.html
 $dokka.location:com.adamratzman.spotify.utils/Market.FX///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-x/index.html
 $dokka.location:com.adamratzman.spotify.utils/Market.FX/alpha3/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-x/alpha3.html
 $dokka.location:com.adamratzman.spotify.utils/Market.FX/assignment/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.utils/-market/-f-x/assignment.html
@@ -4694,6 +4701,7 @@ $dokka.location:com.adamratzman.spotify.webplayer/PlaybackTrackWindow/next_track
 $dokka.location:com.adamratzman.spotify.webplayer/PlaybackTrackWindow/previous_tracks/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-playback-track-window/previous_tracks.html
 $dokka.location:com.adamratzman.spotify.webplayer/Player///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player/index.html
 $dokka.location:com.adamratzman.spotify.webplayer/Player/Player/#com.adamratzman.spotify.webplayer.PlayerInit/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player/-player.html
+$dokka.location:com.adamratzman.spotify.webplayer/Player/activateElement/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player/activate-element.html
 $dokka.location:com.adamratzman.spotify.webplayer/Player/addListener/#kotlin.String#kotlin.Function1[com.adamratzman.spotify.webplayer.Error,kotlin.Unit]/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player/add-listener.html
 $dokka.location:com.adamratzman.spotify.webplayer/Player/addListener/#kotlin.String#kotlin.Function1[com.adamratzman.spotify.webplayer.PlaybackState,kotlin.Unit]/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player/add-listener.html
 $dokka.location:com.adamratzman.spotify.webplayer/Player/addListener/#kotlin.String#kotlin.Function1[com.adamratzman.spotify.webplayer.WebPlaybackInstance,kotlin.Unit]/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player/add-listener.html
@@ -4717,7 +4725,7 @@ $dokka.location:com.adamratzman.spotify.webplayer/Player/setName/#kotlin.String/
 $dokka.location:com.adamratzman.spotify.webplayer/Player/setVolume/#kotlin.Float/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player/set-volume.html
 $dokka.location:com.adamratzman.spotify.webplayer/Player/togglePlay/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player/toggle-play.html
 $dokka.location:com.adamratzman.spotify.webplayer/PlayerInit///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player-init/index.html
-$dokka.location:com.adamratzman.spotify.webplayer/PlayerInit/getOAuthToken/#kotlin.Function1[kotlin.String,kotlin.Unit]/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player-init/get-o-auth-token.html
+$dokka.location:com.adamratzman.spotify.webplayer/PlayerInit/getOAuthToken/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player-init/get-o-auth-token.html
 $dokka.location:com.adamratzman.spotify.webplayer/PlayerInit/name/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player-init/name.html
 $dokka.location:com.adamratzman.spotify.webplayer/PlayerInit/volume/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-player-init/volume.html
 $dokka.location:com.adamratzman.spotify.webplayer/Track///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.webplayer/-track/index.html
