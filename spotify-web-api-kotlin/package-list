@@ -1037,7 +1037,7 @@ $dokka.location:com.adamratzman.spotify.models/PagingTraversalType.FORWARDS/name
 $dokka.location:com.adamratzman.spotify.models/PagingTraversalType.FORWARDS/ordinal/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-paging-traversal-type/-f-o-r-w-a-r-d-s/ordinal.html
 $dokka.location:com.adamratzman.spotify.models/PagingTraversalType///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-paging-traversal-type/index.html
 $dokka.location:com.adamratzman.spotify.models/PlayHistory///PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-play-history/index.html
-$dokka.location:com.adamratzman.spotify.models/PlayHistory/PlayHistory/#com.adamratzman.spotify.models.SimpleTrack#kotlin.String#com.adamratzman.spotify.models.SpotifyContext?/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-play-history/-play-history.html
+$dokka.location:com.adamratzman.spotify.models/PlayHistory/PlayHistory/#com.adamratzman.spotify.models.Track#kotlin.String#com.adamratzman.spotify.models.SpotifyContext?/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-play-history/-play-history.html
 $dokka.location:com.adamratzman.spotify.models/PlayHistory/context/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-play-history/context.html
 $dokka.location:com.adamratzman.spotify.models/PlayHistory/playedAt/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-play-history/played-at.html
 $dokka.location:com.adamratzman.spotify.models/PlayHistory/track/#/PointingToDeclaration/spotify-web-api-kotlin/com.adamratzman.spotify.models/-play-history/track.html
