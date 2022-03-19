@@ -2,49 +2,59 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Player</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
   <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">spotify-web-api-kotlin</a></div>
+      <div>3.8.6</div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector js-like" data-active="" data-filter=":dokkaHtml/jsMain">js</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
     <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+      <div id="leftColumn">
         <div id="sideMenu"></div>
       </div>
       <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.webplayer/Player///PointingToDeclaration//371682492">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.webplayer</a>/<a href="index.html">Player</a></div>
-            <div class="pull-right d-flex">
-              <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector js-like" data-active="" data-filter=":dokkaHtml/jsMain">js</button></div>
-              <div id="searchBar"></div>
-            </div>
-          </div>
+        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.webplayer/Player///PointingToDeclaration//371682492">
+          <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.webplayer</a>/<a href="index.html">Player</a></div>
           <div class="cover ">
-            <h1 class="cover"><span>Player</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open external class <a href="index.html">Player</a>(options: <a href="../-player-init/index.html">PlayerInit</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">The main constructor for initializing the Web Playback SDK. It should contain an object with the player name, volume and access token.</p></div></div>
+            <h1 class="cover"><span><span>Player</span></span></h1>
+            <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+              <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="index.html">Player</a><span class="token punctuation">(</span>options<span class="token operator">: </span><a href="../-player-init/index.html">PlayerInit</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">The main constructor for initializing the Web Playback SDK. It should contain an object with the player name, volume and access token.</p></div>            </div>
           </div>
           <div class="tabbedcontent">
             <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Parameters">Parameters</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
             <div class="tabs-section-body">
               <h2 class="">Parameters</h2>
               <div data-togglable="Parameters">
-                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">options</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The options to instantiate this Player</p></div></div></div></div></div></div></div></div></div>
+                <div class="platform-hinted WithExtraAttributes with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Parameters">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>options</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The options to instantiate this Player</p></div></div></div></div></div></div></div></div>                </div>
               </div>
               <h2 class="tabbedcontent">Constructors</h2>
               <div class="table" data-togglable="Constructors"><a data-name="1189281278%2FConstructors%2F371682492" anchor-label="Player" id="1189281278%2FConstructors%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-player.html">Player</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1189281278%2FConstructors%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="-player.html"><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1189281278%2FConstructors%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">fun <a href="-player.html">Player</a>(options: <a href="../-player-init/index.html">PlayerInit</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">The options to instantiate this Player</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-player.html"><span class="token function">Player</span></a><span class="token punctuation">(</span>options<span class="token operator">: </span><a href="../-player-init/index.html">PlayerInit</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -54,362 +64,272 @@
               <div class="table" data-togglable="Functions"><a data-name="1325645775%2FFunctions%2F371682492" anchor-label="activateElement" id="1325645775%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="activate-element.html">activateElement</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1325645775%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="activate-element.html"><span>activate</span><wbr></wbr><span><span>Element</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1325645775%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="activate-element.html"><span class="token function">activateElement</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Some browsers prevent autoplay of media by ensuring that all playback is triggered by synchronous event-paths originating from user interaction such as a click. This event allows you to manually activate the element if action is deferred or done in a separate execution context than the user action.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">fun <a href="activate-element.html">activateElement</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1325645775%2FFunctions%2F371682492" anchor-label="activateElement" id="1325645775%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="1325645775%2FFunctions%2F371682492" anchor-label="activateElement" id="1325645775%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Some browsers prevent autoplay of media by ensuring that all playback is triggered by synchronous event-paths originating from user interaction such as a click.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="2042516843%2FFunctions%2F371682492" anchor-label="addListener" id="2042516843%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="add-listener.html">addListener</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2042516843%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="add-listener.html"><span>add</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2042516843%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-listener.html"><span class="token function">addListener</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Create a new event listener under event <a href="add-listener.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a> in the Web Playback SDK. Alias for Spotify.Player#on.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-listener.html"><span class="token function">addListener</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Create a new event listener under event <a href="add-listener.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a> in the Web Playback SDK. Alias for Spotify.Player#on.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-listener.html"><span class="token function">addListener</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Create a new event listener under event <a href="add-listener.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a> in the Web Playback SDK. Alias for Spotify.Player#on.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="add-listener.html">addListener</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1005633421%2FFunctions%2F371682492" anchor-label="addListener" id="-1005633421%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-1005633421%2FFunctions%2F371682492" anchor-label="addListener" id="-1005633421%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Create a new event listener under event <a href="add-listener.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a> in the Web Playback SDK.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="add-listener.html">addListener</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1317350239%2FFunctions%2F371682492" anchor-label="addListener" id="-1317350239%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-1317350239%2FFunctions%2F371682492" anchor-label="addListener" id="-1317350239%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Create a new event listener under event <a href="add-listener.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a> in the Web Playback SDK.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="add-listener.html">addListener</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1025948625%2FFunctions%2F371682492" anchor-label="addListener" id="-1025948625%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-1025948625%2FFunctions%2F371682492" anchor-label="addListener" id="-1025948625%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Create a new event listener under event <a href="add-listener.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a> in the Web Playback SDK.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-662951026%2FFunctions%2F371682492" anchor-label="connect" id="-662951026%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="connect.html">connect</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-662951026%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="connect.html"><span><span>connect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-662951026%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="connect.html"><span class="token function">connect</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Connect our Web Playback SDK instance to Spotify with the credentials provided during initialization.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="connect.html">connect</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-662951026%2FFunctions%2F371682492" anchor-label="connect" id="-662951026%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-662951026%2FFunctions%2F371682492" anchor-label="connect" id="-662951026%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Connect our Web Playback SDK instance to Spotify with the credentials provided during initialization.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1839052614%2FFunctions%2F371682492" anchor-label="disconnect" id="1839052614%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="disconnect.html">disconnect</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1839052614%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="disconnect.html"><span><span>disconnect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1839052614%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="disconnect.html"><span class="token function">disconnect</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Closes the current session our Web Playback SDK has with Spotify.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="disconnect.html">disconnect</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1839052614%2FFunctions%2F371682492" anchor-label="disconnect" id="1839052614%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="1839052614%2FFunctions%2F371682492" anchor-label="disconnect" id="1839052614%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Closes the current session our Web Playback SDK has with Spotify.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-341312278%2FFunctions%2F371682492" anchor-label="getCurrentState" id="-341312278%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-current-state.html">getCurrentState</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-341312278%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-current-state.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-341312278%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-state.html"><span class="token function">getCurrentState</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-playback-state/index.html">PlaybackState</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Collect metadata on local playback.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="get-current-state.html">getCurrentState</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="../-playback-state/index.html">PlaybackState</a>?&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-341312278%2FFunctions%2F371682492" anchor-label="getCurrentState" id="-341312278%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-341312278%2FFunctions%2F371682492" anchor-label="getCurrentState" id="-341312278%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Collect metadata on local playback.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1803903384%2FFunctions%2F371682492" anchor-label="getVolume" id="-1803903384%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-volume.html">getVolume</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1803903384%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-volume.html"><span>get</span><wbr></wbr><span><span>Volume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1803903384%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-volume.html"><span class="token function">getVolume</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get the local volume currently set in the Web Playback SDK.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="get-volume.html">getVolume</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1803903384%2FFunctions%2F371682492" anchor-label="getVolume" id="-1803903384%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-1803903384%2FFunctions%2F371682492" anchor-label="getVolume" id="-1803903384%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Get the local volume currently set in the Web Playback SDK.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1214026912%2FFunctions%2F371682492" anchor-label="nextTrack" id="-1214026912%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="next-track.html">nextTrack</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1214026912%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="next-track.html"><span>next</span><wbr></wbr><span><span>Track</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1214026912%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="next-track.html"><span class="token function">nextTrack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Skip to the next track in local playback.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="next-track.html">nextTrack</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1214026912%2FFunctions%2F371682492" anchor-label="nextTrack" id="-1214026912%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-1214026912%2FFunctions%2F371682492" anchor-label="nextTrack" id="-1214026912%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Skip to the next track in local playback.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1548090337%2FFunctions%2F371682492" anchor-label="on" id="1548090337%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on.html">on</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1548090337%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="on.html"><span><span>on</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1548090337%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on.html"><span class="token function">on</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Create a new event listener under event <a href="on.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a> in the Web Playback SDK.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on.html"><span class="token function">on</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Create a new event listener under event <a href="on.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a> in the Web Playback SDK.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on.html"><span class="token function">on</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Create a new event listener under event <a href="on.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a> in the Web Playback SDK.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="on.html">on</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1574487821%2FFunctions%2F371682492" anchor-label="on" id="-1574487821%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-1574487821%2FFunctions%2F371682492" anchor-label="on" id="-1574487821%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Create a new event listener under event <a href="on.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a> in the Web Playback SDK.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="on.html">on</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-162378463%2FFunctions%2F371682492" anchor-label="on" id="-162378463%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-162378463%2FFunctions%2F371682492" anchor-label="on" id="-162378463%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Create a new event listener under event <a href="on.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a> in the Web Playback SDK.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="on.html">on</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="693394607%2FFunctions%2F371682492" anchor-label="on" id="693394607%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="693394607%2FFunctions%2F371682492" anchor-label="on" id="693394607%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Create a new event listener under event <a href="on.html">event</a> of type <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a> in the Web Playback SDK.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1883121346%2FFunctions%2F371682492" anchor-label="pause" id="1883121346%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="pause.html">pause</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1883121346%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="pause.html"><span><span>pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1883121346%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="pause.html"><span class="token function">pause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Pause the local playback.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="pause.html">pause</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1883121346%2FFunctions%2F371682492" anchor-label="pause" id="1883121346%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="1883121346%2FFunctions%2F371682492" anchor-label="pause" id="1883121346%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Pause the local playback.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-932911388%2FFunctions%2F371682492" anchor-label="previousTrack" id="-932911388%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="previous-track.html">previousTrack</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-932911388%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="previous-track.html"><span>previous</span><wbr></wbr><span><span>Track</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-932911388%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="previous-track.html"><span class="token function">previousTrack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Switch to the previous track in local playback.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="previous-track.html">previousTrack</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-932911388%2FFunctions%2F371682492" anchor-label="previousTrack" id="-932911388%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-932911388%2FFunctions%2F371682492" anchor-label="previousTrack" id="-932911388%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Switch to the previous track in local playback.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-362517236%2FFunctions%2F371682492" anchor-label="removeListener" id="-362517236%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="remove-listener.html">removeListener</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-362517236%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="remove-listener.html"><span>remove</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-362517236%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-listener.html"><span class="token function">removeListener</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove all event listeners registered under a specific <a href="remove-listener.html">event</a> type in the Web Playback SDK. <strong>Please use </strong><a href="../../co.scdn.sdk/-spotify-web-playback-event/spotify-id.html"><strong>SpotifyWebPlaybackEvent.spotifyId</strong></a><strong> to get web playback events' spotify ids</strong></p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-listener.html"><span class="token function">removeListener</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a><span class="token operator"> = </span>definedExternally<span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove a specific <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a> registered under event type <a href="remove-listener.html">event</a> in the Web Playback SDK.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-listener.html"><span class="token function">removeListener</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a><span class="token operator"> = </span>definedExternally<span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove a specific <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a> registered under event type <a href="remove-listener.html">event</a> in the Web Playback SDK. <strong>Please use </strong><a href="../../co.scdn.sdk/-spotify-web-playback-event/spotify-id.html"><strong>SpotifyWebPlaybackEvent.spotifyId</strong></a><strong> to get web playback events' spotify ids</strong></p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-listener.html"><span class="token function">removeListener</span></a><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>cb<span class="token operator">: </span><a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a><span class="token operator"> = </span>definedExternally<span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove a specific <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a> registered under event type <a href="remove-listener.html">event</a> in the Web Playback SDK. <strong>Please use </strong><a href="../../co.scdn.sdk/-spotify-web-playback-event/spotify-id.html"><strong>SpotifyWebPlaybackEvent.spotifyId</strong></a><strong> to get web playback events' spotify ids</strong></p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="remove-listener.html">removeListener</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-916243014%2FFunctions%2F371682492" anchor-label="removeListener" id="-916243014%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-916243014%2FFunctions%2F371682492" anchor-label="removeListener" id="-916243014%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Remove all event listeners registered under a specific <a href="remove-listener.html">event</a> type in the Web Playback SDK.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="remove-listener.html">removeListener</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a> = definedExternally)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="867905132%2FFunctions%2F371682492" anchor-label="removeListener" id="867905132%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="867905132%2FFunctions%2F371682492" anchor-label="removeListener" id="867905132%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Remove a specific <a href="../../co.scdn.sdk/index.html#-241831812%2FClasslikes%2F371682492">ErrorListener</a> registered under event type <a href="remove-listener.html">event</a> in the Web Playback SDK.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="remove-listener.html">removeListener</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a> = definedExternally)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-679888486%2FFunctions%2F371682492" anchor-label="removeListener" id="-679888486%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-679888486%2FFunctions%2F371682492" anchor-label="removeListener" id="-679888486%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Remove a specific <a href="../../co.scdn.sdk/index.html#-1920634354%2FClasslikes%2F371682492">PlaybackStateListener</a> registered under event type <a href="remove-listener.html">event</a> in the Web Playback SDK.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="remove-listener.html">removeListener</a>(event: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cb: <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a> = definedExternally)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1930218088%2FFunctions%2F371682492" anchor-label="removeListener" id="1930218088%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="1930218088%2FFunctions%2F371682492" anchor-label="removeListener" id="1930218088%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Remove a specific <a href="../../co.scdn.sdk/index.html#-1960574790%2FClasslikes%2F371682492">PlaybackPlayerListener</a> registered under event type <a href="remove-listener.html">event</a> in the Web Playback SDK.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1628329813%2FFunctions%2F371682492" anchor-label="resume" id="1628329813%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="resume.html">resume</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1628329813%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="resume.html"><span><span>resume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1628329813%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="resume.html"><span class="token function">resume</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Resume the local playback.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="resume.html">resume</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1628329813%2FFunctions%2F371682492" anchor-label="resume" id="1628329813%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="1628329813%2FFunctions%2F371682492" anchor-label="resume" id="1628329813%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Resume the local playback.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-883463582%2FFunctions%2F371682492" anchor-label="seek" id="-883463582%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="seek.html">seek</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-883463582%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="seek.html"><span><span>seek</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-883463582%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="seek.html"><span class="token function">seek</span></a><span class="token punctuation">(</span>pos_ms<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Seek to a position in the current track in local playback.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="seek.html">seek</a>(pos_ms: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-883463582%2FFunctions%2F371682492" anchor-label="seek" id="-883463582%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-883463582%2FFunctions%2F371682492" anchor-label="seek" id="-883463582%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Seek to a position in the current track in local playback.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-548283623%2FFunctions%2F371682492" anchor-label="setName" id="-548283623%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set-name.html">setName</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-548283623%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="set-name.html"><span>set</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-548283623%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-name.html"><span class="token function">setName</span></a><span class="token punctuation">(</span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Rename the Spotify Player device. This is visible across all Spotify Connect devices.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="set-name.html">setName</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-548283623%2FFunctions%2F371682492" anchor-label="setName" id="-548283623%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-548283623%2FFunctions%2F371682492" anchor-label="setName" id="-548283623%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Rename the Spotify Player device.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-848510099%2FFunctions%2F371682492" anchor-label="setVolume" id="-848510099%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set-volume.html">setVolume</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-848510099%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="set-volume.html"><span>set</span><wbr></wbr><span><span>Volume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-848510099%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-volume.html"><span class="token function">setVolume</span></a><span class="token punctuation">(</span>volume<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Set the local volume for the Web Playback SDK.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="set-volume.html">setVolume</a>(volume: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-848510099%2FFunctions%2F371682492" anchor-label="setVolume" id="-848510099%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-848510099%2FFunctions%2F371682492" anchor-label="setVolume" id="-848510099%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Set the local volume for the Web Playback SDK.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1799945030%2FFunctions%2F371682492" anchor-label="togglePlay" id="-1799945030%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="toggle-play.html">togglePlay</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1799945030%2FFunctions%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="toggle-play.html"><span>toggle</span><wbr></wbr><span><span>Play</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1799945030%2FFunctions%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag js-like">js</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark js-like" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain" data-active="" data-toggle=":dokkaHtml/jsMain">js</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="toggle-play.html"><span class="token function">togglePlay</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Resume/pause the local playback.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/jsMain"><div class="symbol monospace">open fun <a href="toggle-play.html">togglePlay</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-promise/index.html">Promise</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1799945030%2FFunctions%2F371682492" anchor-label="togglePlay" id="-1799945030%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a><div class="brief "><a data-name="-1799945030%2FFunctions%2F371682492" anchor-label="togglePlay" id="-1799945030%2FFunctions%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>Resume/pause the local playback.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
@@ -418,7 +338,9 @@
               <div class="table" data-togglable="Sources"><a data-name="-82386051%2FSource%2F371682492" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/jsMain/kotlin/com/adamratzman/spotify/webplayer/WebPlaybackSdk.kt#L112" id="-82386051%2FSource%2F371682492" data-filterable-set=":dokkaHtml/jsMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/jsMain" data-filterable-set=":dokkaHtml/jsMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/jsMain/kotlin/com/adamratzman/spotify/webplayer/WebPlaybackSdk.kt#L112">js source</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-82386051%2FSource%2F371682492"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/jsMain/kotlin/com/adamratzman/spotify/webplayer/WebPlaybackSdk.kt#L112">js source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-82386051%2FSource%2F371682492"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -428,7 +350,7 @@
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
   </body>

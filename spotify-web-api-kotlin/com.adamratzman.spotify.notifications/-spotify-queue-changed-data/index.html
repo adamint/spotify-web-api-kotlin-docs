@@ -2,49 +2,59 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>SpotifyQueueChangedData</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
   <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">spotify-web-api-kotlin</a></div>
+      <div>3.8.6</div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/androidMain">android</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
     <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+      <div id="leftColumn">
         <div id="sideMenu"></div>
       </div>
       <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.notifications/SpotifyQueueChangedData///PointingToDeclaration//1837590656">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.notifications</a>/<a href="index.html">SpotifyQueueChangedData</a></div>
-            <div class="pull-right d-flex">
-              <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/androidMain">android</button></div>
-              <div id="searchBar"></div>
-            </div>
-          </div>
+        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.notifications/SpotifyQueueChangedData///PointingToDeclaration//1837590656">
+          <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.notifications</a>/<a href="index.html">SpotifyQueueChangedData</a></div>
           <div class="cover ">
-            <h1 class="cover"><span>Spotify</span><wbr></wbr><span>Queue</span><wbr></wbr><span>Changed</span><wbr></wbr><span>Data</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><div class="symbol monospace">class <a href="index.html">SpotifyQueueChangedData</a>(timeSentInMs: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>) : <a href="../-spotify-broadcast-event-data/index.html">SpotifyBroadcastEventData</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">A queue change is sent whenever the play queue is changed. It uses the intent action com.spotify.music.queuechanged.</p></div></div>
+            <h1 class="cover"><span>Spotify</span><wbr></wbr><span>Queue</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Data</span></span></h1>
+            <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+              <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">SpotifyQueueChangedData</a><span class="token punctuation">(</span>timeSentInMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">)</span> : <a href="../-spotify-broadcast-event-data/index.html">SpotifyBroadcastEventData</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">A queue change is sent whenever the play queue is changed. It uses the intent action com.spotify.music.queuechanged.</p></div>            </div>
           </div>
           <div class="tabbedcontent">
             <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
             <div class="tabs-section-body">
               <h2 class="">Parameters</h2>
               <div data-togglable="Parameters">
-                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">timeSentInMs</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">When the notification was sent.</p></div></div></div></div></div></div></div></div></div>
+                <div class="platform-hinted WithExtraAttributes with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Parameters">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>time</span><wbr></wbr><span>Sent</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Ms</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">When the notification was sent.</p></div></div></div></div></div></div></div></div>                </div>
               </div>
               <h2 class="tabbedcontent">Constructors</h2>
               <div class="table" data-togglable="Constructors"><a data-name="-480377861%2FConstructors%2F1837590656" anchor-label="SpotifyQueueChangedData" id="-480377861%2FConstructors%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain">
                   <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-spotify-queue-changed-data.html">SpotifyQueueChangedData</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-480377861%2FConstructors%2F1837590656"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="-spotify-queue-changed-data.html"><span>Spotify</span><wbr></wbr><span>Queue</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-480377861%2FConstructors%2F1837590656"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag jvm-like">android</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><div class="symbol monospace">fun <a href="-spotify-queue-changed-data.html">SpotifyQueueChangedData</a>(timeSentInMs: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">When the notification was sent.</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-spotify-queue-changed-data.html"><span class="token function">SpotifyQueueChangedData</span></a><span class="token punctuation">(</span>timeSentInMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -54,31 +64,33 @@
               <div class="table" data-togglable="Properties"><a data-name="1142233893%2FProperties%2F1837590656" anchor-label="timeSentInMs" id="1142233893%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="time-sent-in-ms.html">timeSentInMs</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1142233893%2FProperties%2F1837590656"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="time-sent-in-ms.html">timeSentInMs</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1142233893%2FProperties%2F1837590656"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag jvm-like">android</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="1142233893%2FProperties%2F1837590656" anchor-label="timeSentInMs" id="1142233893%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace">val <a href="time-sent-in-ms.html">timeSentInMs</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1142233893%2FProperties%2F1837590656" anchor-label="timeSentInMs" id="1142233893%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>When the notification was sent.</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="1142233893%2FProperties%2F1837590656" anchor-label="timeSentInMs" id="1142233893%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="time-sent-in-ms.html">timeSentInMs</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-<a data-name="-1543777669%2FProperties%2F1837590656" anchor-label="type" id="-1543777669%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>
+<a data-name="34292849%2FProperties%2F1837590656" anchor-label="type" id="34292849%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1543777669%2FProperties%2F1837590656">type</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1543777669%2FProperties%2F1837590656"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-spotify-broadcast-event-data/type.html">type</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="34292849%2FProperties%2F1837590656"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag jvm-like">android</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-1543777669%2FProperties%2F1837590656" anchor-label="type" id="-1543777669%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace">val <a href="index.html#-1543777669%2FProperties%2F1837590656">type</a>: <a href="../-spotify-broadcast-type/index.html">SpotifyBroadcastType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1543777669%2FProperties%2F1837590656" anchor-label="type" id="-1543777669%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>The type of the broadcast event</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="34292849%2FProperties%2F1837590656" anchor-label="type" id="34292849%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-spotify-broadcast-event-data/type.html">type</a><span class="token operator">: </span><a href="../-spotify-broadcast-type/index.html">SpotifyBroadcastType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -88,7 +100,9 @@
               <div class="table" data-togglable="Sources"><a data-name="186160970%2FSource%2F1837590656" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/androidMain/kotlin/com/adamratzman/spotify/notifications/AbstractSpotifyBroadcastReceiver.kt#L133" id="186160970%2FSource%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/androidMain/kotlin/com/adamratzman/spotify/notifications/AbstractSpotifyBroadcastReceiver.kt#L133">android source</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="186160970%2FSource%2F1837590656"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/androidMain/kotlin/com/adamratzman/spotify/notifications/AbstractSpotifyBroadcastReceiver.kt#L133">android source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="186160970%2FSource%2F1837590656"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -98,7 +112,7 @@
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
   </body>

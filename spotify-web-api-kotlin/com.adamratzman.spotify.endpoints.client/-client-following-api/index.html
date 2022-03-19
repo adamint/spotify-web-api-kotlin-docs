@@ -2,28 +2,35 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>ClientFollowingApi</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
   <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">spotify-web-api-kotlin</a></div>
+      <div>3.8.6</div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
     <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+      <div id="leftColumn">
         <div id="sideMenu"></div>
       </div>
       <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.endpoints.client/ClientFollowingApi///PointingToDeclaration//788909594">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.endpoints.client</a>/<a href="index.html">ClientFollowingApi</a></div>
-            <div class="pull-right d-flex">
-              <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button></div>
-              <div id="searchBar"></div>
-            </div>
-          </div>
+        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.endpoints.client/ClientFollowingApi///PointingToDeclaration//788909594">
+          <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.endpoints.client</a>/<a href="index.html">ClientFollowingApi</a></div>
           <div class="cover ">
-            <h1 class="cover"><span>Client</span><wbr></wbr><span>Following</span><wbr></wbr><span>Api</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">class <a href="index.html">ClientFollowingApi</a>(api: <a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a>) : <a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/index.html">FollowingApi</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">These endpoints allow you manage the artists, users and playlists that a Spotify user follows.</p><p class="paragraph"><a href="https://developer.spotify.com/documentation/web-api/reference/follow/">Api Reference</a></p></div></div>
+            <h1 class="cover"><span>Client</span><wbr></wbr><span>Following</span><wbr></wbr><span><span>Api</span></span></h1>
+            <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+              <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ClientFollowingApi</a><span class="token punctuation">(</span>api<span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="token punctuation">)</span> : <a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/index.html">FollowingApi</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">These endpoints allow you manage the artists, users and playlists that a Spotify user follows.</p><p class="paragraph"><a href="https://developer.spotify.com/documentation/web-api/reference/follow/"><strong>Api Reference</strong></a></p></div>            </div>
           </div>
           <div class="tabbedcontent">
             <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
@@ -32,15 +39,16 @@
               <div class="table" data-togglable="Constructors"><a data-name="-1393452350%2FConstructors%2F788909594" anchor-label="ClientFollowingApi" id="-1393452350%2FConstructors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-client-following-api.html">ClientFollowingApi</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1393452350%2FConstructors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="-client-following-api.html"><span>Client</span><wbr></wbr><span>Following</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1393452350%2FConstructors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="-client-following-api.html">ClientFollowingApi</a>(api: <a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-client-following-api.html"><span class="token function">ClientFollowingApi</span></a><span class="token punctuation">(</span>api<span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -50,725 +58,613 @@
               <div class="table" data-togglable="Functions"><a data-name="-561532074%2FFunctions%2F788909594" anchor-label="areFollowingPlaylist" id="-561532074%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/are-following-playlist.html">areFollowingPlaylist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561532074%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/are-following-playlist.html"><span>are</span><wbr></wbr><span>Following</span><wbr></wbr><span><span>Playlist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561532074%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/are-following-playlist.html"><span class="token function">areFollowingPlaylist</span></a><span class="token punctuation">(</span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword">vararg </span>users<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if one or more Spotify users are following a specified playlist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/are-following-playlist.html">areFollowingPlaylist</a>(playlist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, vararg users: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-561532074%2FFunctions%2F788909594" anchor-label="areFollowingPlaylist" id="-561532074%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-561532074%2FFunctions%2F788909594" anchor-label="areFollowingPlaylist" id="-561532074%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if one or more Spotify users are following a specified playlist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1491692448%2FFunctions%2F788909594" anchor-label="areFollowingPlaylistRestAction" id="1491692448%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/are-following-playlist-rest-action.html">areFollowingPlaylistRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1491692448%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/are-following-playlist-rest-action.html"><span>are</span><wbr></wbr><span>Following</span><wbr></wbr><span>Playlist</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1491692448%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/are-following-playlist-rest-action.html"><span class="token function">areFollowingPlaylistRestAction</span></a><span class="token punctuation">(</span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword">vararg </span>users<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if one or more Spotify users are following a specified playlist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/are-following-playlist-rest-action.html">areFollowingPlaylistRestAction</a>(playlist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, vararg users: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1491692448%2FFunctions%2F788909594" anchor-label="areFollowingPlaylistRestAction" id="1491692448%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="1491692448%2FFunctions%2F788909594" anchor-label="areFollowingPlaylistRestAction" id="1491692448%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if one or more Spotify users are following a specified playlist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-466632737%2FFunctions%2F788909594" anchor-label="followArtist" id="-466632737%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-artist.html">followArtist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-466632737%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-artist.html"><span>follow</span><wbr></wbr><span><span>Artist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-466632737%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="follow-artist.html"><span class="token function">followArtist</span></a><span class="token punctuation">(</span>artistId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of an artist</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="follow-artist.html">followArtist</a>(artistId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-466632737%2FFunctions%2F788909594" anchor-label="followArtist" id="-466632737%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-466632737%2FFunctions%2F788909594" anchor-label="followArtist" id="-466632737%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of an artistRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/follow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1304458665%2FFunctions%2F788909594" anchor-label="followArtistRestAction" id="1304458665%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-artist-rest-action.html">followArtistRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1304458665%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-artist-rest-action.html"><span>follow</span><wbr></wbr><span>Artist</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1304458665%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="follow-artist-rest-action.html"><span class="token function">followArtistRestAction</span></a><span class="token punctuation">(</span>artistId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of an artist</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="follow-artist-rest-action.html">followArtistRestAction</a>(artistId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1304458665%2FFunctions%2F788909594" anchor-label="followArtistRestAction" id="1304458665%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="1304458665%2FFunctions%2F788909594" anchor-label="followArtistRestAction" id="1304458665%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of an artistRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/follow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="822780082%2FFunctions%2F788909594" anchor-label="followArtists" id="822780082%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-artists.html">followArtists</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="822780082%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-artists.html"><span>follow</span><wbr></wbr><span><span>Artists</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="822780082%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="follow-artists.html"><span class="token function">followArtists</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of other artists</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="follow-artists.html">followArtists</a>(vararg artists: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="822780082%2FFunctions%2F788909594" anchor-label="followArtists" id="822780082%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="822780082%2FFunctions%2F788909594" anchor-label="followArtists" id="822780082%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of other artistsRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/follow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1276462396%2FFunctions%2F788909594" anchor-label="followArtistsRestAction" id="1276462396%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-artists-rest-action.html">followArtistsRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1276462396%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-artists-rest-action.html"><span>follow</span><wbr></wbr><span>Artists</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1276462396%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="follow-artists-rest-action.html"><span class="token function">followArtistsRestAction</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of other artists</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="follow-artists-rest-action.html">followArtistsRestAction</a>(vararg artists: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1276462396%2FFunctions%2F788909594" anchor-label="followArtistsRestAction" id="1276462396%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="1276462396%2FFunctions%2F788909594" anchor-label="followArtistsRestAction" id="1276462396%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of other artistsRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/follow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1400784806%2FFunctions%2F788909594" anchor-label="followPlaylist" id="-1400784806%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-playlist.html">followPlaylist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1400784806%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-playlist.html"><span>follow</span><wbr></wbr><span><span>Playlist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1400784806%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="follow-playlist.html"><span class="token function">followPlaylist</span></a><span class="token punctuation">(</span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>followPublicly<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of a playlist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="follow-playlist.html">followPlaylist</a>(playlist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, followPublicly: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = true): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1400784806%2FFunctions%2F788909594" anchor-label="followPlaylist" id="-1400784806%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1400784806%2FFunctions%2F788909594" anchor-label="followPlaylist" id="-1400784806%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of a playlist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-796918000%2FFunctions%2F788909594" anchor-label="followPlaylistRestAction" id="-796918000%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-playlist-rest-action.html">followPlaylistRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-796918000%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-playlist-rest-action.html"><span>follow</span><wbr></wbr><span>Playlist</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-796918000%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="follow-playlist-rest-action.html"><span class="token function">followPlaylistRestAction</span></a><span class="token punctuation">(</span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>followPublicly<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of a playlist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="follow-playlist-rest-action.html">followPlaylistRestAction</a>(playlist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, followPublicly: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-796918000%2FFunctions%2F788909594" anchor-label="followPlaylistRestAction" id="-796918000%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-796918000%2FFunctions%2F788909594" anchor-label="followPlaylistRestAction" id="-796918000%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of a playlist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-242814557%2FFunctions%2F788909594" anchor-label="followUser" id="-242814557%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-user.html">followUser</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-242814557%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-user.html"><span>follow</span><wbr></wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-242814557%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="follow-user.html"><span class="token function">followUser</span></a><span class="token punctuation">(</span>user<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of another user</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="follow-user.html">followUser</a>(user: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-242814557%2FFunctions%2F788909594" anchor-label="followUser" id="-242814557%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-242814557%2FFunctions%2F788909594" anchor-label="followUser" id="-242814557%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of another userRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/follow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1616428435%2FFunctions%2F788909594" anchor-label="followUserRestAction" id="-1616428435%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-user-rest-action.html">followUserRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1616428435%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-user-rest-action.html"><span>follow</span><wbr></wbr><span>User</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1616428435%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="follow-user-rest-action.html"><span class="token function">followUserRestAction</span></a><span class="token punctuation">(</span>user<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of another user</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="follow-user-rest-action.html">followUserRestAction</a>(user: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1616428435%2FFunctions%2F788909594" anchor-label="followUserRestAction" id="-1616428435%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1616428435%2FFunctions%2F788909594" anchor-label="followUserRestAction" id="-1616428435%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of another userRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/follow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1980158354%2FFunctions%2F788909594" anchor-label="followUsers" id="-1980158354%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-users.html">followUsers</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1980158354%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-users.html"><span>follow</span><wbr></wbr><span><span>Users</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1980158354%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="follow-users.html"><span class="token function">followUsers</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>users<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of other users</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="follow-users.html">followUsers</a>(vararg users: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1980158354%2FFunctions%2F788909594" anchor-label="followUsers" id="-1980158354%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1980158354%2FFunctions%2F788909594" anchor-label="followUsers" id="-1980158354%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of other usersRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/follow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="569038840%2FFunctions%2F788909594" anchor-label="followUsersRestAction" id="569038840%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="follow-users-rest-action.html">followUsersRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="569038840%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="follow-users-rest-action.html"><span>follow</span><wbr></wbr><span>Users</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="569038840%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="follow-users-rest-action.html"><span class="token function">followUsersRestAction</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>users<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Add the current user as a follower of other users</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="follow-users-rest-action.html">followUsersRestAction</a>(vararg users: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="569038840%2FFunctions%2F788909594" anchor-label="followUsersRestAction" id="569038840%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="569038840%2FFunctions%2F788909594" anchor-label="followUsersRestAction" id="569038840%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Add the current user as a follower of other usersRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/follow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1978670608%2FFunctions%2F788909594" anchor-label="getFollowedArtists" id="-1978670608%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-followed-artists.html">getFollowedArtists</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1978670608%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-followed-artists.html"><span>get</span><wbr></wbr><span>Followed</span><wbr></wbr><span><span>Artists</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1978670608%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-followed-artists.html"><span class="token function">getFollowedArtists</span></a><span class="token punctuation">(</span>limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>api.spotifyApiOptions.defaultLimit<span class="token punctuation">, </span>after<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify.models/-cursor-based-paging-object/index.html">CursorBasedPagingObject</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get the current user’s followed artists.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="get-followed-artists.html">getFollowedArtists</a>(limit: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>? = api.spotifyApiOptions.defaultLimit, after: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null): <a href="../../com.adamratzman.spotify.models/-cursor-based-paging-object/index.html">CursorBasedPagingObject</a>&lt;<a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1978670608%2FFunctions%2F788909594" anchor-label="getFollowedArtists" id="-1978670608%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1978670608%2FFunctions%2F788909594" anchor-label="getFollowedArtists" id="-1978670608%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Get the current user’s followed artists.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1906369050%2FFunctions%2F788909594" anchor-label="getFollowedArtistsRestAction" id="-1906369050%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-followed-artists-rest-action.html">getFollowedArtistsRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1906369050%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-followed-artists-rest-action.html"><span>get</span><wbr></wbr><span>Followed</span><wbr></wbr><span>Artists</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1906369050%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-followed-artists-rest-action.html"><span class="token function">getFollowedArtistsRestAction</span></a><span class="token punctuation">(</span>limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>api.spotifyApiOptions.defaultLimit<span class="token punctuation">, </span>after<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-cursor-based-paging-object/index.html">CursorBasedPagingObject</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get the current user’s followed artists.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="get-followed-artists-rest-action.html">getFollowedArtistsRestAction</a>(limit: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>? = api.spotifyApiOptions.defaultLimit, after: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="../../com.adamratzman.spotify.models/-cursor-based-paging-object/index.html">CursorBasedPagingObject</a>&lt;<a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a>&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1906369050%2FFunctions%2F788909594" anchor-label="getFollowedArtistsRestAction" id="-1906369050%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1906369050%2FFunctions%2F788909594" anchor-label="getFollowedArtistsRestAction" id="-1906369050%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Get the current user’s followed artists.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="124554613%2FFunctions%2F788909594" anchor-label="isFollowingArtist" id="124554613%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-artist.html">isFollowingArtist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="124554613%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-artist.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span><span>Artist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="124554613%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="is-following-artist.html"><span class="token function">isFollowingArtist</span></a><span class="token punctuation">(</span>artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current user is following a Spotify artist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="is-following-artist.html">isFollowingArtist</a>(artist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="124554613%2FFunctions%2F788909594" anchor-label="isFollowingArtist" id="124554613%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="124554613%2FFunctions%2F788909594" anchor-label="isFollowingArtist" id="124554613%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current user is following a Spotify artist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-148783169%2FFunctions%2F788909594" anchor-label="isFollowingArtistRestAction" id="-148783169%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-artist-rest-action.html">isFollowingArtistRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-148783169%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-artist-rest-action.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span>Artist</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-148783169%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-following-artist-rest-action.html"><span class="token function">isFollowingArtistRestAction</span></a><span class="token punctuation">(</span>artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current user is following a Spotify artist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="is-following-artist-rest-action.html">isFollowingArtistRestAction</a>(artist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-148783169%2FFunctions%2F788909594" anchor-label="isFollowingArtistRestAction" id="-148783169%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-148783169%2FFunctions%2F788909594" anchor-label="isFollowingArtistRestAction" id="-148783169%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current user is following a Spotify artist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1468910500%2FFunctions%2F788909594" anchor-label="isFollowingArtists" id="-1468910500%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-artists.html">isFollowingArtists</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1468910500%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-artists.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span><span>Artists</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1468910500%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="is-following-artists.html"><span class="token function">isFollowingArtists</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current user is following one or more artists.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="is-following-artists.html">isFollowingArtists</a>(vararg artists: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1468910500%2FFunctions%2F788909594" anchor-label="isFollowingArtists" id="-1468910500%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1468910500%2FFunctions%2F788909594" anchor-label="isFollowingArtists" id="-1468910500%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current user is following one or more artists.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="557829222%2FFunctions%2F788909594" anchor-label="isFollowingArtistsRestAction" id="557829222%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-artists-rest-action.html">isFollowingArtistsRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="557829222%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-artists-rest-action.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span>Artists</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="557829222%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-following-artists-rest-action.html"><span class="token function">isFollowingArtistsRestAction</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current user is following one or more artists.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="is-following-artists-rest-action.html">isFollowingArtistsRestAction</a>(vararg artists: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="557829222%2FFunctions%2F788909594" anchor-label="isFollowingArtistsRestAction" id="557829222%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="557829222%2FFunctions%2F788909594" anchor-label="isFollowingArtistsRestAction" id="557829222%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current user is following one or more artists.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="30233198%2FFunctions%2F788909594" anchor-label="isFollowingPlaylist" id="30233198%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-playlist.html">isFollowingPlaylist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="30233198%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-playlist.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span><span>Playlist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="30233198%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="is-following-playlist.html"><span class="token function">isFollowingPlaylist</span></a><span class="token punctuation">(</span>playlistId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current Spotify user is following the specified playlist.</p></div><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/is-following-playlist.html"><span class="token function">isFollowingPlaylist</span></a><span class="token punctuation">(</span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>user<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if a specific Spotify user is following the specified playlist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="is-following-playlist.html">isFollowingPlaylist</a>(playlistId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1783870976%2FFunctions%2F788909594" anchor-label="isFollowingPlaylist" id="-1783870976%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1783870976%2FFunctions%2F788909594" anchor-label="isFollowingPlaylist" id="-1783870976%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current Spotify user is following the specified playlist.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/is-following-playlist.html">isFollowingPlaylist</a>(playlist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, user: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1253499910%2FFunctions%2F788909594" anchor-label="isFollowingPlaylist" id="-1253499910%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1253499910%2FFunctions%2F788909594" anchor-label="isFollowingPlaylist" id="-1253499910%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if a specific Spotify user is following the specified playlist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="2007192386%2FFunctions%2F788909594" anchor-label="isFollowingPlaylistRestAction" id="2007192386%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-playlist-rest-action.html">isFollowingPlaylistRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2007192386%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-playlist-rest-action.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span>Playlist</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2007192386%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-following-playlist-rest-action.html"><span class="token function">isFollowingPlaylistRestAction</span></a><span class="token punctuation">(</span>playlistId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current Spotify user is following the specified playlist.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/is-following-playlist-rest-action.html"><span class="token function">isFollowingPlaylistRestAction</span></a><span class="token punctuation">(</span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>user<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if a specific Spotify user is following the specified playlist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="is-following-playlist-rest-action.html">isFollowingPlaylistRestAction</a>(playlistId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-837580150%2FFunctions%2F788909594" anchor-label="isFollowingPlaylistRestAction" id="-837580150%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-837580150%2FFunctions%2F788909594" anchor-label="isFollowingPlaylistRestAction" id="-837580150%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current Spotify user is following the specified playlist.</div></div>
-<div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="../../com.adamratzman.spotify.endpoints.pub/-following-api/is-following-playlist-rest-action.html">isFollowingPlaylistRestAction</a>(playlist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, user: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-414118716%2FFunctions%2F788909594" anchor-label="isFollowingPlaylistRestAction" id="-414118716%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-414118716%2FFunctions%2F788909594" anchor-label="isFollowingPlaylistRestAction" id="-414118716%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if a specific Spotify user is following the specified playlist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="530984121%2FFunctions%2F788909594" anchor-label="isFollowingUser" id="530984121%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-user.html">isFollowingUser</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="530984121%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-user.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="530984121%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="is-following-user.html"><span class="token function">isFollowingUser</span></a><span class="token punctuation">(</span>user<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current user is following another Spotify user.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="is-following-user.html">isFollowingUser</a>(user: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="530984121%2FFunctions%2F788909594" anchor-label="isFollowingUser" id="530984121%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="530984121%2FFunctions%2F788909594" anchor-label="isFollowingUser" id="530984121%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current user is following another Spotify user.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1944066563%2FFunctions%2F788909594" anchor-label="isFollowingUserRestAction" id="1944066563%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-user-rest-action.html">isFollowingUserRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1944066563%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-user-rest-action.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span>User</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1944066563%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-following-user-rest-action.html"><span class="token function">isFollowingUserRestAction</span></a><span class="token punctuation">(</span>user<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current user is following another Spotify user.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="is-following-user-rest-action.html">isFollowingUserRestAction</a>(user: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1944066563%2FFunctions%2F788909594" anchor-label="isFollowingUserRestAction" id="1944066563%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="1944066563%2FFunctions%2F788909594" anchor-label="isFollowingUserRestAction" id="1944066563%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current user is following another Spotify user.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="2057675928%2FFunctions%2F788909594" anchor-label="isFollowingUsers" id="2057675928%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-users.html">isFollowingUsers</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2057675928%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-users.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span><span>Users</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2057675928%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="is-following-users.html"><span class="token function">isFollowingUsers</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>users<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current user is following one or more other Spotify users.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="is-following-users.html">isFollowingUsers</a>(vararg users: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="2057675928%2FFunctions%2F788909594" anchor-label="isFollowingUsers" id="2057675928%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="2057675928%2FFunctions%2F788909594" anchor-label="isFollowingUsers" id="2057675928%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current user is following one or more other Spotify users.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="58794402%2FFunctions%2F788909594" anchor-label="isFollowingUsersRestAction" id="58794402%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-following-users-rest-action.html">isFollowingUsersRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="58794402%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="is-following-users-rest-action.html"><span>is</span><wbr></wbr><span>Following</span><wbr></wbr><span>Users</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="58794402%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-following-users-rest-action.html"><span class="token function">isFollowingUsersRestAction</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>users<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check to see if the current user is following one or more other Spotify users.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="is-following-users-rest-action.html">isFollowingUsersRestAction</a>(vararg users: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="58794402%2FFunctions%2F788909594" anchor-label="isFollowingUsersRestAction" id="58794402%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="58794402%2FFunctions%2F788909594" anchor-label="isFollowingUsersRestAction" id="58794402%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Check to see if the current user is following one or more other Spotify users.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="147508792%2FFunctions%2F788909594" anchor-label="unfollowArtist" id="147508792%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-artist.html">unfollowArtist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="147508792%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-artist.html"><span>unfollow</span><wbr></wbr><span><span>Artist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="147508792%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="unfollow-artist.html"><span class="token function">unfollowArtist</span></a><span class="token punctuation">(</span>artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of an artist</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="unfollow-artist.html">unfollowArtist</a>(artist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="147508792%2FFunctions%2F788909594" anchor-label="unfollowArtist" id="147508792%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="147508792%2FFunctions%2F788909594" anchor-label="unfollowArtist" id="147508792%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of an artistRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/unfollow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-236705598%2FFunctions%2F788909594" anchor-label="unfollowArtistRestAction" id="-236705598%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-artist-rest-action.html">unfollowArtistRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-236705598%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-artist-rest-action.html"><span>unfollow</span><wbr></wbr><span>Artist</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-236705598%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unfollow-artist-rest-action.html"><span class="token function">unfollowArtistRestAction</span></a><span class="token punctuation">(</span>artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of an artist</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="unfollow-artist-rest-action.html">unfollowArtistRestAction</a>(artist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-236705598%2FFunctions%2F788909594" anchor-label="unfollowArtistRestAction" id="-236705598%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-236705598%2FFunctions%2F788909594" anchor-label="unfollowArtistRestAction" id="-236705598%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of an artistRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/unfollow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1223161145%2FFunctions%2F788909594" anchor-label="unfollowArtists" id="1223161145%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-artists.html">unfollowArtists</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1223161145%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-artists.html"><span>unfollow</span><wbr></wbr><span><span>Artists</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1223161145%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="unfollow-artists.html"><span class="token function">unfollowArtists</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of artists</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="unfollow-artists.html">unfollowArtists</a>(vararg artists: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1223161145%2FFunctions%2F788909594" anchor-label="unfollowArtists" id="1223161145%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="1223161145%2FFunctions%2F788909594" anchor-label="unfollowArtists" id="1223161145%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of artistsRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/unfollow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-2097947389%2FFunctions%2F788909594" anchor-label="unfollowArtistsRestAction" id="-2097947389%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-artists-rest-action.html">unfollowArtistsRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2097947389%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-artists-rest-action.html"><span>unfollow</span><wbr></wbr><span>Artists</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2097947389%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unfollow-artists-rest-action.html"><span class="token function">unfollowArtistsRestAction</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of artists</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="unfollow-artists-rest-action.html">unfollowArtistsRestAction</a>(vararg artists: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-2097947389%2FFunctions%2F788909594" anchor-label="unfollowArtistsRestAction" id="-2097947389%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-2097947389%2FFunctions%2F788909594" anchor-label="unfollowArtistsRestAction" id="-2097947389%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of artistsRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/unfollow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1199741437%2FFunctions%2F788909594" anchor-label="unfollowPlaylist" id="-1199741437%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-playlist.html">unfollowPlaylist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1199741437%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-playlist.html"><span>unfollow</span><wbr></wbr><span><span>Playlist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1199741437%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="unfollow-playlist.html"><span class="token function">unfollowPlaylist</span></a><span class="token punctuation">(</span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of a playlist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="unfollow-playlist.html">unfollowPlaylist</a>(playlist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1199741437%2FFunctions%2F788909594" anchor-label="unfollowPlaylist" id="-1199741437%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1199741437%2FFunctions%2F788909594" anchor-label="unfollowPlaylist" id="-1199741437%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of a playlist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="568311501%2FFunctions%2F788909594" anchor-label="unfollowPlaylistRestAction" id="568311501%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-playlist-rest-action.html">unfollowPlaylistRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="568311501%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-playlist-rest-action.html"><span>unfollow</span><wbr></wbr><span>Playlist</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="568311501%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unfollow-playlist-rest-action.html"><span class="token function">unfollowPlaylistRestAction</span></a><span class="token punctuation">(</span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of a playlist.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="unfollow-playlist-rest-action.html">unfollowPlaylistRestAction</a>(playlist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="568311501%2FFunctions%2F788909594" anchor-label="unfollowPlaylistRestAction" id="568311501%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="568311501%2FFunctions%2F788909594" anchor-label="unfollowPlaylistRestAction" id="568311501%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of a playlist.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="101958204%2FFunctions%2F788909594" anchor-label="unfollowUser" id="101958204%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-user.html">unfollowUser</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="101958204%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-user.html"><span>unfollow</span><wbr></wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="101958204%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="unfollow-user.html"><span class="token function">unfollowUser</span></a><span class="token punctuation">(</span>user<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of another user</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="unfollow-user.html">unfollowUser</a>(user: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="101958204%2FFunctions%2F788909594" anchor-label="unfollowUser" id="101958204%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="101958204%2FFunctions%2F788909594" anchor-label="unfollowUser" id="101958204%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of another userRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/unfollow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="1126098886%2FFunctions%2F788909594" anchor-label="unfollowUserRestAction" id="1126098886%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-user-rest-action.html">unfollowUserRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1126098886%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-user-rest-action.html"><span>unfollow</span><wbr></wbr><span>User</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1126098886%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unfollow-user-rest-action.html"><span class="token function">unfollowUserRestAction</span></a><span class="token punctuation">(</span>user<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of another user</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="unfollow-user-rest-action.html">unfollowUserRestAction</a>(user: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1126098886%2FFunctions%2F788909594" anchor-label="unfollowUserRestAction" id="1126098886%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="1126098886%2FFunctions%2F788909594" anchor-label="unfollowUserRestAction" id="1126098886%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of another userRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/unfollow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1604323147%2FFunctions%2F788909594" anchor-label="unfollowUsers" id="-1604323147%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-users.html">unfollowUsers</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1604323147%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-users.html"><span>unfollow</span><wbr></wbr><span><span>Users</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1604323147%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="unfollow-users.html"><span class="token function">unfollowUsers</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>users<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of other users</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">suspend fun <a href="unfollow-users.html">unfollowUsers</a>(vararg users: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1604323147%2FFunctions%2F788909594" anchor-label="unfollowUsers" id="-1604323147%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1604323147%2FFunctions%2F788909594" anchor-label="unfollowUsers" id="-1604323147%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of other usersRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/unfollow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-1320503937%2FFunctions%2F788909594" anchor-label="unfollowUsersRestAction" id="-1320503937%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="unfollow-users-rest-action.html">unfollowUsersRestAction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1320503937%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="unfollow-users-rest-action.html"><span>unfollow</span><wbr></wbr><span>Users</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1320503937%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unfollow-users-rest-action.html"><span class="token function">unfollowUsersRestAction</span></a><span class="token punctuation">(</span><span class="token keyword">vararg </span>users<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Remove the current user as a follower of other users</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="unfollow-users-rest-action.html">unfollowUsersRestAction</a>(vararg users: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1320503937%2FFunctions%2F788909594" anchor-label="unfollowUsersRestAction" id="-1320503937%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="brief "><a data-name="-1320503937%2FFunctions%2F788909594" anchor-label="unfollowUsersRestAction" id="-1320503937%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Remove the current user as a follower of other usersRequires the <a href="../../com.adamratzman.spotify/-spotify-scope/-u-s-e-r_-f-o-l-l-o-w_-m-o-d-i-f-y/index.html">SpotifyScope.USER_FOLLOW_MODIFY</a> scope<a href="https://developer.spotify.com/documentation/web-api/reference/follow/unfollow-artists-users/">Api Reference</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
               </div>
               <h2 class="">Properties</h2>
-              <div class="table" data-togglable="Properties"><a data-name="-522891773%2FProperties%2F788909594" anchor-label="api" id="-522891773%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+              <div class="table" data-togglable="Properties"><a data-name="-1031776815%2FProperties%2F788909594" anchor-label="api" id="-1031776815%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-522891773%2FProperties%2F788909594">api</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-522891773%2FProperties%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../../com.adamratzman.spotify.http/-spotify-endpoint/api.html">api</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1031776815%2FProperties%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-522891773%2FProperties%2F788909594" anchor-label="api" id="-522891773%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="index.html#-522891773%2FProperties%2F788909594">api</a>: <a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-1031776815%2FProperties%2F788909594" anchor-label="api" id="-1031776815%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.adamratzman.spotify.http/-spotify-endpoint/api.html">api</a><span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-<a data-name="210056603%2FProperties%2F788909594" anchor-label="cache" id="210056603%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+<a data-name="797802985%2FProperties%2F788909594" anchor-label="cache" id="797802985%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#210056603%2FProperties%2F788909594">cache</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="210056603%2FProperties%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../../com.adamratzman.spotify.http/-spotify-endpoint/cache.html">cache</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="797802985%2FProperties%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="210056603%2FProperties%2F788909594" anchor-label="cache" id="210056603%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="index.html#210056603%2FProperties%2F788909594">cache</a>: <a href="../../com.adamratzman.spotify.http/-spotify-cache/index.html">SpotifyCache</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="797802985%2FProperties%2F788909594" anchor-label="cache" id="797802985%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.adamratzman.spotify.http/-spotify-endpoint/cache.html">cache</a><span class="token operator">: </span><a href="../../com.adamratzman.spotify.http/-spotify-cache/index.html">SpotifyCache</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -778,7 +674,9 @@
               <div class="table" data-togglable="Sources"><a data-name="775042594%2FSource%2F788909594" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/client/ClientFollowingApi.kt#L21" id="775042594%2FSource%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/client/ClientFollowingApi.kt#L21">common source</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="775042594%2FSource%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/client/ClientFollowingApi.kt#L21">common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="775042594%2FSource%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -788,7 +686,7 @@
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
   </body>

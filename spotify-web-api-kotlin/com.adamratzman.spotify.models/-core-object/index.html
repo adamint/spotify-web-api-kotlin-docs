@@ -2,28 +2,35 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>CoreObject</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
   <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">spotify-web-api-kotlin</a></div>
+      <div>3.8.6</div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
     <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+      <div id="leftColumn">
         <div id="sideMenu"></div>
       </div>
       <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.models/CoreObject///PointingToDeclaration//788909594">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.models</a>/<a href="index.html">CoreObject</a></div>
-            <div class="pull-right d-flex">
-              <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button></div>
-              <div id="searchBar"></div>
-            </div>
-          </div>
+        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.models/CoreObject///PointingToDeclaration//788909594">
+          <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.models</a>/<a href="index.html">CoreObject</a></div>
           <div class="cover ">
-            <h1 class="cover"><span>Core</span><wbr></wbr><span>Object</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">abstract class <a href="index.html">CoreObject</a> : <a href="../-identifiable/index.html">Identifiable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Represents a core Spotify object such as a Track or Album</p></div></div>
+            <h1 class="cover"><span>Core</span><wbr></wbr><span><span>Object</span></span></h1>
+            <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+              <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">CoreObject</a> : <a href="../-identifiable/index.html">Identifiable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Represents a core Spotify object such as a Track or Album</p></div>            </div>
           </div>
           <div class="tabbedcontent">
             <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Sources">Sources</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
@@ -32,15 +39,16 @@
               <div class="table" data-togglable="Constructors"><a data-name="-721219654%2FConstructors%2F788909594" anchor-label="CoreObject" id="-721219654%2FConstructors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-core-object.html">CoreObject</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-721219654%2FConstructors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="-core-object.html"><span>Core</span><wbr></wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-721219654%2FConstructors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="-core-object.html">CoreObject</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-core-object.html"><span class="token function">CoreObject</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -50,37 +58,35 @@
               <div class="table" data-togglable="Functions"><a data-name="1381178853%2FFunctions%2F788909594" anchor-label="getMembersThatNeedApiInstantiation" id="1381178853%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-members-that-need-api-instantiation.html">getMembersThatNeedApiInstantiation</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1381178853%2FFunctions%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-members-that-need-api-instantiation.html"><span>get</span><wbr></wbr><span>Members</span><wbr></wbr><span>That</span><wbr></wbr><span>Need</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Instantiation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1381178853%2FFunctions%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-members-that-need-api-instantiation.html"><span class="token function">getMembersThatNeedApiInstantiation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-needs-api/index.html">NeedsApi</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace">abstract override fun <a href="get-members-that-need-api-instantiation.html">getMembersThatNeedApiInstantiation</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-needs-api/index.html">NeedsApi</a>?&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
                     </div>
                   </div>
                 </div>
               </div>
               <h2 class="">Properties</h2>
-              <div class="table" data-togglable="Properties"><a data-name="-1955556056%2FProperties%2F788909594" anchor-label="api" id="-1955556056%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+              <div class="table" data-togglable="Properties"><a data-name="1476559881%2FProperties%2F788909594" anchor-label="api" id="1476559881%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1955556056%2FProperties%2F788909594">api</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1955556056%2FProperties%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-needs-api/api.html">api</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1476559881%2FProperties%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-1955556056%2FProperties%2F788909594" anchor-label="api" id="-1955556056%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace">lateinit var <a href="index.html#-1955556056%2FProperties%2F788909594">api</a>: <a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1955556056%2FProperties%2F788909594" anchor-label="api" id="-1955556056%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>The API client associated with the request</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="1476559881%2FProperties%2F788909594" anchor-label="api" id="1476559881%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="../-needs-api/api.html">api</a><span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1476559881%2FProperties%2F788909594" anchor-label="api" id="1476559881%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><p class="paragraph">The API client associated with the request</p></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -88,15 +94,16 @@
 <a data-name="-164967767%2FProperties%2F788909594" anchor-label="externalUrls" id="-164967767%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="external-urls.html">externalUrls</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-164967767%2FProperties%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="external-urls.html">externalUrls</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-164967767%2FProperties%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-164967767%2FProperties%2F788909594" anchor-label="externalUrls" id="-164967767%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="external-urls.html">externalUrls</a>: <a href="../../com.adamratzman.spotify.utils/-external-urls/index.html">ExternalUrls</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-164967767%2FProperties%2F788909594" anchor-label="externalUrls" id="-164967767%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>Known external URLs for this object</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-164967767%2FProperties%2F788909594" anchor-label="externalUrls" id="-164967767%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="external-urls.html">externalUrls</a><span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-external-urls/index.html">ExternalUrls</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-164967767%2FProperties%2F788909594" anchor-label="externalUrls" id="-164967767%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><p class="paragraph">Known external URLs for this object</p></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -104,31 +111,33 @@
 <a data-name="1166084429%2FProperties%2F788909594" anchor-label="href" id="1166084429%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="href.html">href</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1166084429%2FProperties%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="href.html">href</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1166084429%2FProperties%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="1166084429%2FProperties%2F788909594" anchor-label="href" id="1166084429%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace">abstract override val <a href="href.html">href</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1166084429%2FProperties%2F788909594" anchor-label="href" id="1166084429%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>A link to the Spotify web api endpoint associated with this request</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="1166084429%2FProperties%2F788909594" anchor-label="href" id="1166084429%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="href.html">href</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1166084429%2FProperties%2F788909594" anchor-label="href" id="1166084429%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><p class="paragraph">A link to the Spotify web api endpoint associated with this request</p></div></div>                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-<a data-name="-125934563%2FProperties%2F788909594" anchor-label="id" id="-125934563%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+<a data-name="203562933%2FProperties%2F788909594" anchor-label="id" id="203562933%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-125934563%2FProperties%2F788909594">id</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-125934563%2FProperties%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-identifiable/id.html">id</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="203562933%2FProperties%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-125934563%2FProperties%2F788909594" anchor-label="id" id="-125934563%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace">abstract override val <a href="index.html#-125934563%2FProperties%2F788909594">id</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-125934563%2FProperties%2F788909594" anchor-label="id" id="-125934563%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>The Spotify id of the associated object</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="203562933%2FProperties%2F788909594" anchor-label="id" id="203562933%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-identifiable/id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="203562933%2FProperties%2F788909594" anchor-label="id" id="203562933%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><p class="paragraph">The Spotify id of the associated object</p></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -136,15 +145,16 @@
 <a data-name="-832091626%2FProperties%2F788909594" anchor-label="uri" id="-832091626%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="uri.html">uri</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-832091626%2FProperties%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="uri.html">uri</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-832091626%2FProperties%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">common</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-832091626%2FProperties%2F788909594" anchor-label="uri" id="-832091626%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace">abstract val <a href="uri.html">uri</a>: <a href="../-spotify-uri/index.html">SpotifyUri</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-832091626%2FProperties%2F788909594" anchor-label="uri" id="-832091626%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>The URI associated with the object</div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-832091626%2FProperties%2F788909594" anchor-label="uri" id="-832091626%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="uri.html">uri</a><span class="token operator">: </span><a href="../-spotify-uri/index.html">SpotifyUri</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-832091626%2FProperties%2F788909594" anchor-label="uri" id="-832091626%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><p class="paragraph">The URI associated with the object</p></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -154,7 +164,9 @@
               <div class="table" data-togglable="Inheritors"><a data-name="939201504%2FInheritors%2F788909594" anchor-label="SimpleAlbum" id="939201504%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-simple-album/index.html">SimpleAlbum</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="939201504%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-simple-album/index.html">SimpleAlbum</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="939201504%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -163,7 +175,9 @@
 <a data-name="-1310229874%2FInheritors%2F788909594" anchor-label="Album" id="-1310229874%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-album/index.html">Album</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1310229874%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-album/index.html">Album</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1310229874%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -172,7 +186,9 @@
 <a data-name="-1104209076%2FInheritors%2F788909594" anchor-label="SimpleArtist" id="-1104209076%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-simple-artist/index.html">SimpleArtist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1104209076%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-simple-artist/index.html">SimpleArtist</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1104209076%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -181,7 +197,9 @@
 <a data-name="-2117105058%2FInheritors%2F788909594" anchor-label="Artist" id="-2117105058%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-artist/index.html">Artist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2117105058%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-artist/index.html">Artist</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2117105058%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -190,7 +208,9 @@
 <a data-name="-843627134%2FInheritors%2F788909594" anchor-label="Episode" id="-843627134%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-episode/index.html">Episode</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-843627134%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-episode/index.html">Episode</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-843627134%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -199,7 +219,9 @@
 <a data-name="491377236%2FInheritors%2F788909594" anchor-label="SimpleEpisode" id="491377236%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-simple-episode/index.html">SimpleEpisode</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="491377236%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-simple-episode/index.html">SimpleEpisode</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="491377236%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -208,7 +230,9 @@
 <a data-name="-2016263519%2FInheritors%2F788909594" anchor-label="SimplePlaylist" id="-2016263519%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-simple-playlist/index.html">SimplePlaylist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2016263519%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-simple-playlist/index.html">SimplePlaylist</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2016263519%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -217,7 +241,9 @@
 <a data-name="-451726029%2FInheritors%2F788909594" anchor-label="Playlist" id="-451726029%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-playlist/index.html">Playlist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-451726029%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-playlist/index.html">Playlist</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-451726029%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -226,7 +252,9 @@
 <a data-name="-77241136%2FInheritors%2F788909594" anchor-label="RelinkingAvailableResponse" id="-77241136%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-relinking-available-response/index.html">RelinkingAvailableResponse</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-77241136%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-relinking-available-response/index.html">RelinkingAvailableResponse</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-77241136%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -235,7 +263,9 @@
 <a data-name="-1751297834%2FInheritors%2F788909594" anchor-label="SimpleShow" id="-1751297834%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-simple-show/index.html">SimpleShow</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1751297834%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-simple-show/index.html">SimpleShow</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1751297834%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -244,7 +274,9 @@
 <a data-name="-1269670808%2FInheritors%2F788909594" anchor-label="Show" id="-1269670808%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-show/index.html">Show</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1269670808%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-show/index.html">Show</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1269670808%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -253,7 +285,9 @@
 <a data-name="208164523%2FInheritors%2F788909594" anchor-label="LinkedTrack" id="208164523%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-linked-track/index.html">LinkedTrack</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="208164523%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-linked-track/index.html">LinkedTrack</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="208164523%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -262,7 +296,9 @@
 <a data-name="-1617205410%2FInheritors%2F788909594" anchor-label="SpotifyUserInformation" id="-1617205410%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-spotify-user-information/index.html">SpotifyUserInformation</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1617205410%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-spotify-user-information/index.html">SpotifyUserInformation</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1617205410%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -271,7 +307,9 @@
 <a data-name="757384111%2FInheritors%2F788909594" anchor-label="SpotifyPublicUser" id="757384111%2FInheritors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-spotify-public-user/index.html">SpotifyPublicUser</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="757384111%2FInheritors%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-spotify-public-user/index.html">SpotifyPublicUser</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="757384111%2FInheritors%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -282,7 +320,9 @@
               <div class="table" data-togglable="Sources"><a data-name="32561095%2FSource%2F788909594" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/models/ResultObjects.kt#L35" id="32561095%2FSource%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/models/ResultObjects.kt#L35">common source</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="32561095%2FSource%2F788909594"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/models/ResultObjects.kt#L35">common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="32561095%2FSource%2F788909594"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -292,7 +332,7 @@
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
   </body>

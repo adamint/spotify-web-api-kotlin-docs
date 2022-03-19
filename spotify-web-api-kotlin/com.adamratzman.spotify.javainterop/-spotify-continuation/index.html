@@ -2,28 +2,35 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>SpotifyContinuation</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
   <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">spotify-web-api-kotlin</a></div>
+      <div>3.8.6</div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonJvmLikeMain">commonJvmLike</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
     <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+      <div id="leftColumn">
         <div id="sideMenu"></div>
       </div>
       <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.javainterop/SpotifyContinuation///PointingToDeclaration//178362178">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.javainterop</a>/<a href="index.html">SpotifyContinuation</a></div>
-            <div class="pull-right d-flex">
-              <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonJvmLikeMain">commonJvmLike</button></div>
-              <div id="searchBar"></div>
-            </div>
-          </div>
+        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.javainterop/SpotifyContinuation///PointingToDeclaration//178362178">
+          <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.javainterop</a>/<a href="index.html">SpotifyContinuation</a></div>
           <div class="cover ">
-            <h1 class="cover"><span>Spotify</span><wbr></wbr><span>Continuation</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace">abstract class <a href="index.html">SpotifyContinuation</a>&lt;in <a href="index.html">T</a>&gt; : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a>&lt;<a href="index.html">T</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a> wrapper to allow you to directly implement <a href="on-success.html">onSuccess</a> and <a href="on-failure.html">onFailure</a>, when exceptions are hidden on JVM via traditional continuations. Please use this class as a callback anytime you are using Java code with this library.</p></div></div>
+            <h1 class="cover"><span>Spotify</span><wbr></wbr><span><span>Continuation</span></span></h1>
+            <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+              <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain" data-active="" data-toggle=":dokkaHtml/commonJvmLikeMain">commonJvmLike</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">SpotifyContinuation</a><span class="token operator">&lt;</span><span class="token keyword">in </span><a href="index.html">T</a><span class="token operator">&gt;</span> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">T</a><span class="token operator">&gt; </span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a> wrapper to allow you to directly implement <a href="on-success.html">onSuccess</a> and <a href="on-failure.html">onFailure</a>, when exceptions are hidden on JVM via traditional continuations. <strong>Please use this class as a callback anytime you are using Java code with this library.</strong></p></div>            </div>
           </div>
           <div class="tabbedcontent">
             <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
@@ -32,15 +39,16 @@
               <div class="table" data-togglable="Constructors"><a data-name="-1660140265%2FConstructors%2F178362178" anchor-label="SpotifyContinuation" id="-1660140265%2FConstructors%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain">
                   <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-spotify-continuation.html">SpotifyContinuation</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1660140265%2FConstructors%2F178362178"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="-spotify-continuation.html"><span>Spotify</span><wbr></wbr><span><span>Continuation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1660140265%2FConstructors%2F178362178"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">commonJvmLike</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace">fun <a href="-spotify-continuation.html">SpotifyContinuation</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain" data-active="" data-toggle=":dokkaHtml/commonJvmLikeMain">commonJvmLike</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-spotify-continuation.html"><span class="token function">SpotifyContinuation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -50,60 +58,51 @@
               <div class="table" data-togglable="Functions"><a data-name="-594472566%2FFunctions%2F178362178" anchor-label="onFailure" id="-594472566%2FFunctions%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on-failure.html">onFailure</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-594472566%2FFunctions%2F178362178"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="on-failure.html"><span>on</span><wbr></wbr><span><span>Failure</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-594472566%2FFunctions%2F178362178"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">commonJvmLike</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain" data-active="" data-toggle=":dokkaHtml/commonJvmLikeMain">commonJvmLike</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-failure.html"><span class="token function">onFailure</span></a><span class="token punctuation">(</span>exception<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Handle exceptions during this API call.</p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace">abstract fun <a href="on-failure.html">onFailure</a>(exception: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-594472566%2FFunctions%2F178362178" anchor-label="onFailure" id="-594472566%2FFunctions%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a><div class="brief "><a data-name="-594472566%2FFunctions%2F178362178" anchor-label="onFailure" id="-594472566%2FFunctions%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a>Handle exceptions during this API call.</div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="283504250%2FFunctions%2F178362178" anchor-label="onSuccess" id="283504250%2FFunctions%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on-success.html">onSuccess</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="283504250%2FFunctions%2F178362178"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="on-success.html"><span>on</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="283504250%2FFunctions%2F178362178"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">commonJvmLike</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain" data-active="" data-toggle=":dokkaHtml/commonJvmLikeMain">commonJvmLike</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-success.html"><span class="token function">onSuccess</span></a><span class="token punctuation">(</span>value<span class="token operator">: </span><a href="index.html">T</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Invoke a function with the callback <a href="on-success.html">value</a></p></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace">abstract fun <a href="on-success.html">onSuccess</a>(value: <a href="index.html">T</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="283504250%2FFunctions%2F178362178" anchor-label="onSuccess" id="283504250%2FFunctions%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a><div class="brief "><a data-name="283504250%2FFunctions%2F178362178" anchor-label="onSuccess" id="283504250%2FFunctions%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a>Invoke a function with the callback <a href="on-success.html">value</a></div></div>
-</div>
                     </div>
                   </div>
                 </div>
 <a data-name="-301330091%2FFunctions%2F178362178" anchor-label="resumeWith" id="-301330091%2FFunctions%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="resume-with.html">resumeWith</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-301330091%2FFunctions%2F178362178"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="resume-with.html"><span>resume</span><wbr></wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-301330091%2FFunctions%2F178362178"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">commonJvmLike</div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain" data-active="" data-toggle=":dokkaHtml/commonJvmLikeMain">commonJvmLike</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="resume-with.html"><span class="token function">resumeWith</span></a><span class="token punctuation">(</span>result<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><div class="symbol monospace">open override fun <a href="resume-with.html">resumeWith</a>(result: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html">Result</a>&lt;<a href="index.html">T</a>&gt;)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
                     </div>
                   </div>
                 </div>
@@ -112,15 +111,16 @@
               <div class="table" data-togglable="Properties"><a data-name="-2005075047%2FProperties%2F178362178" anchor-label="context" id="-2005075047%2FProperties%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="context.html">context</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2005075047%2FProperties%2F178362178"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="context.html">context</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2005075047%2FProperties%2F178362178"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
-                      <div class="platform-tags ">
-                        <div class="platform-tag common-like">commonJvmLike</div>
-                      </div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><a data-name="-2005075047%2FProperties%2F178362178" anchor-label="context" id="-2005075047%2FProperties%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a><div class="symbol monospace">open override val <a href="context.html">context</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain" data-active="" data-toggle=":dokkaHtml/commonJvmLikeMain">commonJvmLike</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonJvmLikeMain"><a data-name="-2005075047%2FProperties%2F178362178" anchor-label="context" id="-2005075047%2FProperties%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="context.html">context</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
                       </div>
                     </div>
                   </div>
@@ -130,7 +130,9 @@
               <div class="table" data-togglable="Sources"><a data-name="-1412290387%2FSource%2F178362178" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonJvmLikeMain/kotlin/com/adamratzman/spotify/javainterop/SpotifyContinuation.kt#L10" id="-1412290387%2FSource%2F178362178" data-filterable-set=":dokkaHtml/commonJvmLikeMain"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/commonJvmLikeMain" data-filterable-set=":dokkaHtml/commonJvmLikeMain">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonJvmLikeMain/kotlin/com/adamratzman/spotify/javainterop/SpotifyContinuation.kt#L10">commonJvmLike source</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1412290387%2FSource%2F178362178"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonJvmLikeMain/kotlin/com/adamratzman/spotify/javainterop/SpotifyContinuation.kt#L10">commonJvmLike source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1412290387%2FSource%2F178362178"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div></div>
@@ -140,7 +142,7 @@
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
   </body>
