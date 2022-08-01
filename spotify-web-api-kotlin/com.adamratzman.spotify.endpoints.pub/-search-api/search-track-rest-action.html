@@ -1,54 +1,78 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>searchTrackRestAction</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
 const savedDarkMode = storage ? JSON.parse(storage) : false
 if(savedDarkMode === true){
     document.getElementsByTagName("html")[0].classList.add("theme-dark")
 }</script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
-  <body>
-    <div class="navigation-wrapper" id="navigation-wrapper">
-      <div id="leftToggler"><span class="icon-toggler"></span></div>
-      <div class="library-name"><a href="../../../index.html">spotify-web-api-kotlin</a></div>
-      <div>3.8.6</div>
-      <div class="pull-right d-flex">
-        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button></div>
-<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-      </div>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>spotify-web-api-kotlin</span>
+            </a>
     </div>
-    <div id="container">
-      <div id="leftColumn">
-        <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.endpoints.pub/SearchApi/searchTrackRestAction/#kotlin.String#kotlin.Int?#kotlin.Int?#com.adamratzman.spotify.utils.Market?/PointingToDeclaration//788909594">
-          <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a>/<a href="../index.html">com.adamratzman.spotify.endpoints.pub</a>/<a href="index.html">SearchApi</a>/<a href="search-track-rest-action.html">searchTrackRestAction</a></div>
-          <div class="cover ">
-            <h1 class="cover"><span>search</span><wbr></wbr><span>Track</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></h1>
-          </div>
-          <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-            <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="search-track-rest-action.html"><span class="token function">searchTrackRestAction</span></a><span class="token punctuation">(</span>query<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>api.spotifyApiOptions.defaultLimit<span class="token punctuation">, </span>offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span>market<span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-market/index.html">Market</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-paging-object/index.html">PagingObject</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-track/index.html">Track</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Get Spotify Catalog information about tracks that match the keyword string. See <a href="search.html">SearchApi.search</a> for more information</p><p class="paragraph"><a href="https://developer.spotify.com/documentation/web-api/reference/search/search/"><strong>Api Reference</strong></a></p><h4 class="">Return</h4><p class="paragraph"><a href="../../com.adamratzman.spotify.models/-paging-object/index.html">PagingObject</a> of non-full <a href="../../com.adamratzman.spotify.models/-simple-track/index.html">SimpleTrack</a> objects ordered by likelihood of correct match</p><h2 class="">See also</h2><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="search.html"><span>com.</span><wbr></wbr><span>adamratzman.</span><wbr></wbr><span>spotify.</span><wbr></wbr><span>endpoints.</span><wbr></wbr><span>pub.</span><wbr></wbr><span>SearchApi</span></a></div></span></div><div><div class="title"><div data-togglable="See also"></div></div></div></div></div></div></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>query</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Search query keywords and optional field filters and operators.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>market</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Provide this parameter if you want to apply <a href="https://github.com/adamint/spotify-web-api-kotlin#track-relinking">Track Relinking</a></p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>limit</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The number of objects to return. Default: 50 (or api limit). Minimum: 1. Maximum: 50.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>offset</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The index of the first item to return. Default: 0. Use with limit to get the next set of items</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.adamratzman.spotify/-spotify-exception/-bad-request-exception/index.html"><span>com.</span><wbr></wbr><span>adamratzman.</span><wbr></wbr><span>spotify.</span><wbr></wbr><span>Spotify</span><wbr></wbr><span>Exception.</span><wbr></wbr><span>Bad</span><wbr></wbr><span>Request</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if filters are illegal or query is malformed</p></div></div></div></div></div></div>          </div>
-          <h2 class="">Sources</h2>
-          <div class="table" data-togglable="Sources"><a data-name="-1228228098%2FSource%2F788909594" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/pub/SearchApi.kt#L381" id="-1228228098%2FSource%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
-            <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
-              <div class="main-subrow keyValue ">
-                <div class=""><span class="inline-flex">
-                    <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/pub/SearchApi.kt#L381">common source</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1228228098%2FSource%2F788909594"></span>
-                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                    </span></span></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
+    <div>
+3.8.7    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.endpoints.pub/SearchApi/searchTrackRestAction/#kotlin.String#kotlin.Int?#kotlin.Int?#com.adamratzman.spotify.utils.Market?/PointingToDeclaration//788909594">
+  <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a><span class="delimiter">/</span><a href="../index.html">com.adamratzman.spotify.endpoints.pub</a><span class="delimiter">/</span><a href="index.html">SearchApi</a><span class="delimiter">/</span><a href="search-track-rest-action.html">searchTrackRestAction</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>search</span><wbr></wbr><span>Track</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></h1>
+  </div>
+  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="search-track-rest-action.html"><span class="token function">searchTrackRestAction</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;query<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>api.spotifyApiOptions.defaultLimit<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;market<span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-market/index.html">Market</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-paging-object/index.html">PagingObject</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-track/index.html">Track</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Get Spotify Catalog information about tracks that match the keyword string. See <a href="search.html">SearchApi.search</a> for more information</p><p class="paragraph"><a href="https://developer.spotify.com/documentation/web-api/reference/search/search/"><strong>Api Reference</strong></a></p><h4 class="">Return</h4><p class="paragraph"><a href="../../com.adamratzman.spotify.models/-paging-object/index.html">PagingObject</a> of non-full <a href="../../com.adamratzman.spotify.models/-simple-track/index.html">SimpleTrack</a> objects ordered by likelihood of correct match</p><h2 class="">See also</h2><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="search.html"><span>com.</span><wbr></wbr><span>adamratzman.</span><wbr></wbr><span>spotify.</span><wbr></wbr><span>endpoints.</span><wbr></wbr><span>pub.</span><wbr></wbr><span>SearchApi</span></a></div></span></div><div><div class="title"><div data-togglable="See also"></div></div></div></div></div></div></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>query</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Search query keywords and optional field filters and operators.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>market</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Provide this parameter if you want to apply <a href="https://github.com/adamint/spotify-web-api-kotlin#track-relinking">Track Relinking</a></p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>limit</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The number of objects to return. Default: 50 (or api limit). Minimum: 1. Maximum: 50.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>offset</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The index of the first item to return. Default: 0. Use with limit to get the next set of items</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.adamratzman.spotify/-spotify-exception/-bad-request-exception/index.html"><span>com.</span><wbr></wbr><span>adamratzman.</span><wbr></wbr><span>spotify.</span><wbr></wbr><span>Spotify</span><wbr></wbr><span>Exception.</span><wbr></wbr><span>Bad</span><wbr></wbr><span>Request</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if filters are illegal or query is malformed</p></div></div></div></div></div></div>  </div>
+  <h2 class="">Sources</h2>
+  <div class="table" data-togglable="Sources"><a data-name="-1228228098%2FSource%2F788909594" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/pub/SearchApi.kt#L381" id="-1228228098%2FSource%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+    <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+      <div class="main-subrow keyValue ">
+        <div class=""><span class="inline-flex">
+            <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/pub/SearchApi.kt#L381">common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1228228098%2FSource%2F788909594"></span>
+              <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+            </span></span></div>
+        <div></div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-
