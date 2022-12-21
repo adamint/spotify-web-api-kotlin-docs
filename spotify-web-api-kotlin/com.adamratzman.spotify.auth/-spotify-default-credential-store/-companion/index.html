@@ -6,10 +6,18 @@
     <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../../styles/style.css" rel="Stylesheet">
 <link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-3.8.8    </div>
+4.0.0    </div>
     <div class="pull-right d-flex">
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/androidMain">android</button>
@@ -46,15 +55,15 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.auth/SpotifyDefaultCredentialStore.Companion///PointingToDeclaration//1837590656">
-  <div class="breadcrumbs"><a href="../../../../index.html">spotify-web-api-kotlin</a><span class="delimiter">/</span><a href="../../index.html">com.adamratzman.spotify.auth</a><span class="delimiter">/</span><a href="../index.html">SpotifyDefaultCredentialStore</a><span class="delimiter">/</span><a href="index.html">Companion</a></div>
+  <div class="breadcrumbs"><a href="../../../../index.html">spotify-web-api-kotlin</a><span class="delimiter">/</span><a href="../../index.html">com.adamratzman.spotify.auth</a><span class="delimiter">/</span><a href="../index.html">SpotifyDefaultCredentialStore</a><span class="delimiter">/</span><span class="current">Companion</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Companion</span></span></h1>
     <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>    </div>
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/androidMain/kotlin/com/adamratzman/spotify/auth/SpotifyDefaultCredentialStore.kt#L40">source</a>)</span></span></div></div>    </div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Properties">Properties</button></div>
     <div class="tabs-section-body">
       <h2 class="">Properties</h2>
       <div class="table" data-togglable="Properties"><a data-name="-422803329%2FProperties%2F1837590656" anchor-label="activityBackOnImplicitAuth" id="-422803329%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>
@@ -68,8 +77,8 @@ if(savedDarkMode === true){
             <div>
               <div class="title">
                 <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-422803329%2FProperties%2F1837590656" anchor-label="activityBackOnImplicitAuth" id="-422803329%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="activity-back-on-implicit-auth.html">activityBackOnImplicitAuth</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-422803329%2FProperties%2F1837590656" anchor-label="activityBackOnImplicitAuth" id="-422803329%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The activity to return to if re-authentication is necessary on implicit authentication. Null except during authentication when using guardValidImplicitSpotifyApi</p></div></div>                </div>
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-422803329%2FProperties%2F1837590656" anchor-label="activityBackOnImplicitAuth" id="-422803329%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="activity-back-on-implicit-auth.html">activityBackOnImplicitAuth</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="-422803329%2FProperties%2F1837590656" anchor-label="activityBackOnImplicitAuth" id="-422803329%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The activity to return to if re-authentication is necessary on implicit authentication. Null except during authentication when using guardValidImplicitSpotifyApi</p></div></div>                </div>
               </div>
             </div>
           </div>
@@ -85,8 +94,8 @@ if(savedDarkMode === true){
             <div>
               <div class="title">
                 <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-574711819%2FProperties%2F1837590656" anchor-label="SpotifyAccessTokenKey" id="-574711819%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-access-token-key.html">SpotifyAccessTokenKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-574711819%2FProperties%2F1837590656" anchor-label="SpotifyAccessTokenKey" id="-574711819%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The key used with spotify access token in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-574711819%2FProperties%2F1837590656" anchor-label="SpotifyAccessTokenKey" id="-574711819%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-access-token-key.html">SpotifyAccessTokenKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="-574711819%2FProperties%2F1837590656" anchor-label="SpotifyAccessTokenKey" id="-574711819%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The key used with spotify access token in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
               </div>
             </div>
           </div>
@@ -102,8 +111,8 @@ if(savedDarkMode === true){
             <div>
               <div class="title">
                 <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="1162071993%2FProperties%2F1837590656" anchor-label="SpotifyCurrentPkceCodeVerifierKey" id="1162071993%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-current-pkce-code-verifier-key.html">SpotifyCurrentPkceCodeVerifierKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1162071993%2FProperties%2F1837590656" anchor-label="SpotifyCurrentPkceCodeVerifierKey" id="1162071993%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The PKCE code verifier key currently being used in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="1162071993%2FProperties%2F1837590656" anchor-label="SpotifyCurrentPkceCodeVerifierKey" id="1162071993%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-current-pkce-code-verifier-key.html">SpotifyCurrentPkceCodeVerifierKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="1162071993%2FProperties%2F1837590656" anchor-label="SpotifyCurrentPkceCodeVerifierKey" id="1162071993%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The PKCE code verifier key currently being used in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
               </div>
             </div>
           </div>
@@ -119,8 +128,8 @@ if(savedDarkMode === true){
             <div>
               <div class="title">
                 <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="885604698%2FProperties%2F1837590656" anchor-label="SpotifyRefreshTokenKey" id="885604698%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-refresh-token-key.html">SpotifyRefreshTokenKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="885604698%2FProperties%2F1837590656" anchor-label="SpotifyRefreshTokenKey" id="885604698%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The key used with spotify refresh token in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="885604698%2FProperties%2F1837590656" anchor-label="SpotifyRefreshTokenKey" id="885604698%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-refresh-token-key.html">SpotifyRefreshTokenKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="885604698%2FProperties%2F1837590656" anchor-label="SpotifyRefreshTokenKey" id="885604698%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The key used with spotify refresh token in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
               </div>
             </div>
           </div>
@@ -136,8 +145,8 @@ if(savedDarkMode === true){
             <div>
               <div class="title">
                 <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-1255421819%2FProperties%2F1837590656" anchor-label="SpotifyScopeStringKey" id="-1255421819%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-scope-string-key.html">SpotifyScopeStringKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1255421819%2FProperties%2F1837590656" anchor-label="SpotifyScopeStringKey" id="-1255421819%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The key used with spotify scope string in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-1255421819%2FProperties%2F1837590656" anchor-label="SpotifyScopeStringKey" id="-1255421819%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-scope-string-key.html">SpotifyScopeStringKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="-1255421819%2FProperties%2F1837590656" anchor-label="SpotifyScopeStringKey" id="-1255421819%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The key used with spotify scope string in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
               </div>
             </div>
           </div>
@@ -153,23 +162,10 @@ if(savedDarkMode === true){
             <div>
               <div class="title">
                 <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-672755444%2FProperties%2F1837590656" anchor-label="SpotifyTokenExpiryKey" id="-672755444%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-token-expiry-key.html">SpotifyTokenExpiryKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-672755444%2FProperties%2F1837590656" anchor-label="SpotifyTokenExpiryKey" id="-672755444%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The key used with spotify token expiry in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain" data-active="" data-toggle=":dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/androidMain"><a data-name="-672755444%2FProperties%2F1837590656" anchor-label="SpotifyTokenExpiryKey" id="-672755444%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-spotify-token-expiry-key.html">SpotifyTokenExpiryKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="-672755444%2FProperties%2F1837590656" anchor-label="SpotifyTokenExpiryKey" id="-672755444%2FProperties%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a><p class="paragraph">The key used with spotify token expiry in <a href="https://developer.android.com/reference/kotlin/androidx/security/crypto/EncryptedSharedPreferences.html">EncryptedSharedPreferences</a></p></div></div>                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Sources</h2>
-      <div class="table" data-togglable="Sources"><a data-name="-1986538466%2FSource%2F1837590656" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/androidMain/kotlin/com/adamratzman/spotify/auth/SpotifyDefaultCredentialStore.kt#L40" id="-1986538466%2FSource%2F1837590656" data-filterable-set=":dokkaHtml/androidMain"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/androidMain" data-filterable-set=":dokkaHtml/androidMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/androidMain/kotlin/com/adamratzman/spotify/auth/SpotifyDefaultCredentialStore.kt#L40">android source</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1986538466%2FSource%2F1837590656"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
           </div>
         </div>
       </div>

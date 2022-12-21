@@ -6,10 +6,18 @@
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
 <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-3.8.8    </div>
+4.0.0    </div>
     <div class="pull-right d-flex">
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button>
@@ -46,21 +55,17 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.models/RecommendationResponse///PointingToDeclaration//788909594">
-  <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a><span class="delimiter">/</span><a href="../index.html">com.adamratzman.spotify.models</a><span class="delimiter">/</span><a href="index.html">RecommendationResponse</a></div>
+  <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a><span class="delimiter">/</span><a href="../index.html">com.adamratzman.spotify.models</a><span class="delimiter">/</span><span class="current">RecommendationResponse</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Recommendation</span><wbr></wbr><span><span>Response</span></span></h1>
-    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">RecommendationResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>seeds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-recommendation-seed/index.html">RecommendationSeed</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>tracks<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-track/index.html">Track</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>    </div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">RecommendationResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>seeds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-recommendation-seed/index.html">RecommendationSeed</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>tracks<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-track/index.html">Track</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/models/Browse.kt#L47">source</a>)</span></span></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button></div>
     <div class="tabs-section-body">
-      <h2 class="">Parameters</h2>
+      <h4 class="">Parameters</h4>
       <div data-togglable="Parameters">
-        <div class="platform-hinted WithExtraAttributes with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Parameters">
-          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>seeds</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">An array of recommendation seed objects.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>tracks</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">An array of track object (simplified) ordered according to the parameters supplied.</p></div></div></div></div></div></div></div></div>        </div>
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>seeds</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">An array of recommendation seed objects.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>tracks</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">An array of track object (simplified) ordered according to the parameters supplied.</p></div></div></div></div></div></div></div></div></div>
       </div>
       <h2 class="tabbedcontent">Constructors</h2>
       <div class="table" data-togglable="Constructors"><a data-name="-1916732872%2FConstructors%2F788909594" anchor-label="RecommendationResponse" id="-1916732872%2FConstructors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
@@ -73,9 +78,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-recommendation-response.html"><span class="token function">RecommendationResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">seeds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-recommendation-seed/index.html">RecommendationSeed</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">tracks<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-track/index.html">Track</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-recommendation-response.html"><span class="token function">RecommendationResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">seeds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-recommendation-seed/index.html">RecommendationSeed</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">tracks<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-track/index.html">Track</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>
@@ -92,9 +95,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="809180676%2FProperties%2F788909594" anchor-label="seeds" id="809180676%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="seeds.html">seeds</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-recommendation-seed/index.html">RecommendationSeed</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="809180676%2FProperties%2F788909594" anchor-label="seeds" id="809180676%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="seeds.html">seeds</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-recommendation-seed/index.html">RecommendationSeed</a><span class="token operator">&gt;</span></div></div></div>
               </div>
             </div>
           </div>
@@ -109,24 +110,9 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-241686228%2FProperties%2F788909594" anchor-label="tracks" id="-241686228%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="tracks.html">tracks</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-track/index.html">Track</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-241686228%2FProperties%2F788909594" anchor-label="tracks" id="-241686228%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="tracks.html">tracks</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-track/index.html">Track</a><span class="token operator">&gt;</span></div></div></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Sources</h2>
-      <div class="table" data-togglable="Sources"><a data-name="982791659%2FSource%2F788909594" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/models/Browse.kt#L47" id="982791659%2FSource%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/models/Browse.kt#L47">common source</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="982791659%2FSource%2F788909594"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
           </div>
         </div>
       </div>

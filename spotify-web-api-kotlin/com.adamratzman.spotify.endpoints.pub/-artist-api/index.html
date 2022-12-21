@@ -6,10 +6,18 @@
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
 <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-3.8.8    </div>
+4.0.0    </div>
     <div class="pull-right d-flex">
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button>
@@ -46,15 +55,13 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="spotify-web-api-kotlin::com.adamratzman.spotify.endpoints.pub/ArtistApi///PointingToDeclaration//788909594">
-  <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a><span class="delimiter">/</span><a href="../index.html">com.adamratzman.spotify.endpoints.pub</a><span class="delimiter">/</span><a href="index.html">ArtistApi</a></div>
+  <div class="breadcrumbs"><a href="../../../index.html">spotify-web-api-kotlin</a><span class="delimiter">/</span><a href="../index.html">com.adamratzman.spotify.endpoints.pub</a><span class="delimiter">/</span><span class="current">ArtistApi</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Artist</span><wbr></wbr><span><span>Api</span></span></h1>
-    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ArtistApi</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>api<span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a></span></span><span class="token punctuation">)</span> : <a href="../../com.adamratzman.spotify.http/-spotify-endpoint/index.html">SpotifyEndpoint</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Endpoints for retrieving information about one or more artists from the Spotify catalog.</p><p class="paragraph"><a href="https://developer.spotify.com/documentation/web-api/reference/artists/"><strong>Api Reference</strong></a></p></div>    </div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ArtistApi</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>api<span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a></span></span><span class="token punctuation">)</span> : <a href="../../com.adamratzman.spotify.http/-spotify-endpoint/index.html">SpotifyEndpoint</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/pub/ArtistApi.kt#L22">source</a>)</span></span></div><p class="paragraph">Endpoints for retrieving information about one or more artists from the Spotify catalog.</p><p class="paragraph"><a href="https://developer.spotify.com/documentation/web-api/reference/artists/"><strong>Api Reference</strong></a></p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
     <div class="tabs-section-body">
       <h2 class="tabbedcontent">Constructors</h2>
       <div class="table" data-togglable="Constructors"><a data-name="-1984299478%2FConstructors%2F788909594" anchor-label="ArtistApi" id="-1984299478%2FConstructors%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
@@ -67,9 +74,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-artist-api.html"><span class="token function">ArtistApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">api<span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-artist-api.html"><span class="token function">ArtistApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">api<span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a></span></span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>
@@ -86,9 +91,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-album-inclusion-strategy/index.html">AlbumInclusionStrategy</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-album-inclusion-strategy/index.html">ArtistApi.AlbumInclusionStrategy</a><span class="token operator">&gt; </span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Describes object types to include when finding albums</p></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-album-inclusion-strategy/index.html">AlbumInclusionStrategy</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-album-inclusion-strategy/index.html">ArtistApi.AlbumInclusionStrategy</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Describes object types to include when finding albums</p></div></div></div>
               </div>
             </div>
           </div>
@@ -105,9 +108,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-artist.html"><span class="token function">getArtist</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information for a single artist identified by their unique Spotify ID.</p></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-artist.html"><span class="token function">getArtist</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get Spotify catalog information for a single artist identified by their unique Spotify ID.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -122,43 +123,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-artist-albums.html"><span class="token function">getArtistAlbums</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>api.spotifyApiOptions.defaultLimit<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;market<span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-market/index.html">Market</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">vararg </span>include<span class="token operator">: </span><a href="-album-inclusion-strategy/index.html">ArtistApi.AlbumInclusionStrategy</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify.models/-paging-object/index.html">PagingObject</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-simple-album/index.html">SimpleAlbum</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about an artist’s albums.</p></div></div>                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1585194167%2FFunctions%2F788909594" anchor-label="getArtistAlbumsRestAction" id="-1585194167%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-artist-albums-rest-action.html"><span>get</span><wbr></wbr><span>Artist</span><wbr></wbr><span>Albums</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1585194167%2FFunctions%2F788909594"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-artist-albums-rest-action.html"><span class="token function">getArtistAlbumsRestAction</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>api.spotifyApiOptions.defaultLimit<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;market<span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-market/index.html">Market</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">vararg </span>include<span class="token operator">: </span><a href="-album-inclusion-strategy/index.html">ArtistApi.AlbumInclusionStrategy</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-paging-object/index.html">PagingObject</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-simple-album/index.html">SimpleAlbum</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about an artist’s albums.</p></div></div>                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-735318761%2FFunctions%2F788909594" anchor-label="getArtistRestAction" id="-735318761%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-artist-rest-action.html"><span>get</span><wbr></wbr><span>Artist</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-735318761%2FFunctions%2F788909594"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-artist-rest-action.html"><span class="token function">getArtistRestAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information for a single artist identified by their unique Spotify ID.</p></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-artist-albums.html"><span class="token function">getArtistAlbums</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>api.spotifyApiOptions.defaultLimit<span class="token punctuation">, </span></span><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">market<span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-market/index.html">Market</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>include<span class="token operator">: </span><a href="-album-inclusion-strategy/index.html">ArtistApi.AlbumInclusionStrategy</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify.models/-paging-object/index.html">PagingObject</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-simple-album/index.html">SimpleAlbum</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about an artist’s albums.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -173,26 +138,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-artists.html"><span class="token function">getArtists</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information for several artists based on their Spotify IDs. <strong>Artists not found are returned as null inside the ordered list</strong></p></div></div>                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="2098873358%2FFunctions%2F788909594" anchor-label="getArtistsRestAction" id="2098873358%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-artists-rest-action.html"><span>get</span><wbr></wbr><span>Artists</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2098873358%2FFunctions%2F788909594"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-artists-rest-action.html"><span class="token function">getArtistsRestAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information for several artists based on their Spotify IDs. <strong>Artists not found are returned as null inside the ordered list</strong></p></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-artists.html"><span class="token function">getArtists</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>artists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get Spotify catalog information for several artists based on their Spotify IDs. <strong>Artists not found are returned as null inside the ordered list</strong></p></div></div></div>
               </div>
             </div>
           </div>
@@ -207,26 +153,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-artist-top-tracks.html"><span class="token function">getArtistTopTracks</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">market<span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-market/index.html">Market</a><span class="token operator"> = </span>Market.US</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-track/index.html">Track</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about an artist’s top tracks <strong>by country</strong>.</p></div></div>                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="806188869%2FFunctions%2F788909594" anchor-label="getArtistTopTracksRestAction" id="806188869%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-artist-top-tracks-rest-action.html"><span>get</span><wbr></wbr><span>Artist</span><wbr></wbr><span>Top</span><wbr></wbr><span>Tracks</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="806188869%2FFunctions%2F788909594"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-artist-top-tracks-rest-action.html"><span class="token function">getArtistTopTracksRestAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">market<span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-market/index.html">Market</a><span class="token operator"> = </span>Market.US</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-track/index.html">Track</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about an artist’s top tracks <strong>by country</strong>.</p></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-artist-top-tracks.html"><span class="token function">getArtistTopTracks</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">market<span class="token operator">: </span><a href="../../com.adamratzman.spotify.utils/-market/index.html">Market</a><span class="token operator"> = </span>Market.US</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-track/index.html">Track</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about an artist’s top tracks <strong>by country</strong>.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -241,26 +168,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-related-artists.html"><span class="token function">getRelatedArtists</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community’s listening history.</p></div></div>                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-735202767%2FFunctions%2F788909594" anchor-label="getRelatedArtistsRestAction" id="-735202767%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-related-artists-rest-action.html"><span>get</span><wbr></wbr><span>Related</span><wbr></wbr><span>Artists</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-735202767%2FFunctions%2F788909594"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-related-artists-rest-action.html"><span class="token function">getRelatedArtistsRestAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.adamratzman.spotify/-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community’s listening history.</p></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-related-artists.html"><span class="token function">getRelatedArtists</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.adamratzman.spotify.models/-artist/index.html">Artist</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community’s listening history.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -277,9 +185,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-1031776815%2FProperties%2F788909594" anchor-label="api" id="-1031776815%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.adamratzman.spotify.http/-spotify-endpoint/api.html">api</a><span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="-1031776815%2FProperties%2F788909594" anchor-label="api" id="-1031776815%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.adamratzman.spotify.http/-spotify-endpoint/api.html">api</a><span class="token operator">: </span><a href="../../com.adamratzman.spotify/index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a></div></div></div>
               </div>
             </div>
           </div>
@@ -294,24 +200,9 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
-                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain" data-active="" data-toggle=":dokkaHtml/commonMain">common</button></div>
-<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="797802985%2FProperties%2F788909594" anchor-label="cache" id="797802985%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.adamratzman.spotify.http/-spotify-endpoint/cache.html">cache</a><span class="token operator">: </span><a href="../../com.adamratzman.spotify.http/-spotify-cache/index.html">SpotifyCache</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><a data-name="797802985%2FProperties%2F788909594" anchor-label="cache" id="797802985%2FProperties%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.adamratzman.spotify.http/-spotify-endpoint/cache.html">cache</a><span class="token operator">: </span><a href="../../com.adamratzman.spotify.http/-spotify-cache/index.html">SpotifyCache</a></div></div></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Sources</h2>
-      <div class="table" data-togglable="Sources"><a data-name="-1830571719%2FSource%2F788909594" anchor-label="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/pub/ArtistApi.kt#L23" id="-1830571719%2FSource%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="https://github.com/adamint/spotify-web-api-kotlin/tree/master/src/commonMain/kotlin/com.adamratzman.spotify/endpoints/pub/ArtistApi.kt#L23">common source</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1830571719%2FSource%2F788909594"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
           </div>
         </div>
       </div>
