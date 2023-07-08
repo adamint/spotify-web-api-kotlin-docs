@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.adamratzman.spotify</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>spotify-api-kotlin</span>
+            </a>
+    </div>
+    <div>
+4.0.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaHtml/commonMain">common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="spotify-api-kotlin::com.adamratzman.spotify////PointingToDeclaration//788909594">
+  <div class="breadcrumbs"><a href="../../index.html">spotify-api-kotlin</a><span class="delimiter">/</span><span class="current">com.adamratzman.spotify</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1268657672%2FClasslikes%2F788909594" anchor-label="AuthorizationType" id="-1268657672%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-type/index.html"><span>Authorization</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1268657672%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-authorization-type/index.html">AuthorizationType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-authorization-type/index.html">AuthorizationType</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The type of Spotify authorization used to build an Api instance</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2001802348%2FClasslikes%2F788909594" anchor-label="GenericSpotifyApi" id="-2001802348%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2001802348%2FClasslikes%2F788909594"><span>Generic</span><wbr></wbr><span>Spotify</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2001802348%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="token operator"> = </span><a href="-spotify-api/index.html">SpotifyApi</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Represents a generic instance of the Spotify API client, with common functionality and information between implementations of the API</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2123735269%2FClasslikes%2F788909594" anchor-label="ISpotifyApiBuilder" id="2123735269%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-spotify-api-builder/index.html"><span>ISpotify</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2123735269%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-i-spotify-api-builder/index.html">ISpotifyApiBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-i-spotify-api-builder/index.html">T</a><span class="token operator"> : </span><a href="-spotify-api/index.html">SpotifyApi</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-i-spotify-api-builder/index.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-i-spotify-api-builder/index.html">B</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="-i-spotify-api-builder/index.html">B</a><span class="token operator"> : </span><a href="-i-spotify-api-builder/index.html">ISpotifyApiBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-i-spotify-api-builder/index.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-i-spotify-api-builder/index.html">B</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Spotify Api builder interface</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1885289338%2FClasslikes%2F788909594" anchor-label="ISpotifyAppApiBuilder" id="1885289338%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-spotify-app-api-builder/index.html"><span>ISpotify</span><wbr></wbr><span>App</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1885289338%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-i-spotify-app-api-builder/index.html">ISpotifyAppApiBuilder</a> : <a href="-i-spotify-api-builder/index.html">ISpotifyApiBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-app-api/index.html">SpotifyAppApi</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">App Api builder interface</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="457715034%2FClasslikes%2F788909594" anchor-label="ISpotifyClientApiBuilder" id="457715034%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-spotify-client-api-builder/index.html"><span>ISpotify</span><wbr></wbr><span>Client</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="457715034%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-i-spotify-client-api-builder/index.html">ISpotifyClientApiBuilder</a> : <a href="-i-spotify-api-builder/index.html">ISpotifyApiBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-client-api/index.html">SpotifyClientApi</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Client interface exposing <a href="-i-spotify-client-api-builder/get-authorization-url.html">getAuthorizationUrl</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-667630921%2FClasslikes%2F788909594" anchor-label="SpotifyApi" id="-667630921%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-api/index.html"><span>Spotify</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-667630921%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-spotify-api/index.html">SpotifyApi</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-api/index.html">T</a><span class="token operator"> : </span><a href="-spotify-api/index.html">SpotifyApi</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-api/index.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-spotify-api/index.html">B</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="-spotify-api/index.html">B</a><span class="token operator"> : </span><a href="-i-spotify-api-builder/index.html">ISpotifyApiBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-api/index.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-spotify-api/index.html">B</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Represents an instance of the Spotify API client, with common functionality and information between the <a href="-spotify-client-api/index.html">SpotifyClientApi</a> and <a href="-spotify-app-api/index.html">SpotifyAppApi</a> implementations of the API</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="66072528%2FClasslikes%2F788909594" anchor-label="SpotifyApiBuilder" id="66072528%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-api-builder/index.html"><span>Spotify</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="66072528%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-spotify-api-builder/index.html">SpotifyApiBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Spotify API builder</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1879142957%2FClasslikes%2F788909594" anchor-label="SpotifyApiOptions" id="1879142957%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-api-options/index.html"><span>Spotify</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1879142957%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>useCache<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>cacheLimit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span><span class="token constant">200</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>automaticRefresh<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>retryWhenRateLimited<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>enableLogger<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>testTokenValidity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>defaultLimit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">50</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowBulkRequests<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>requestTimeoutMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>json<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/Json///PointingToDeclaration/">Json</span><span class="token operator"> = </span>nonstrictJson<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>refreshTokenProducer<span class="token operator">: </span><span class="token keyword">suspend </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>onTokenRefresh<span class="token operator">: </span><span class="token keyword">suspend </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>requiredScopes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-scope/index.html">SpotifyScope</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>proxyBaseUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>retryOnInternalServerErrorTimes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span><span class="token constant">5</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>enableDebugMode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>httpResponseSubscriber<span class="token operator">: </span><span class="token keyword">suspend </span><span class="token punctuation">(</span><span class="token keyword"></span>request<span class="token operator">: </span><a href="../com.adamratzman.spotify.http/-http-request/index.html">HttpRequest</a><span class="token punctuation">, </span><span class="token keyword"></span>response<span class="token operator">: </span><a href="../com.adamratzman.spotify.http/-http-response/index.html">HttpResponse</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>afterTokenRefresh<span class="token operator">: </span><span class="token keyword">suspend </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html#-2001802348%2FClasslikes%2F788909594">GenericSpotifyApi</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">API Utilities</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1131290952%2FClasslikes%2F788909594" anchor-label="SpotifyAppApi" id="-1131290952%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-app-api/index.html"><span>Spotify</span><wbr></wbr><span>App</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1131290952%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-spotify-app-api/index.html">SpotifyAppApi</a> : <a href="-spotify-api/index.html">SpotifyApi</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-app-api/index.html">SpotifyAppApi</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">An API instance created with application credentials, not through client authentication</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-172179281%2FClasslikes%2F788909594" anchor-label="SpotifyAppApiBuilder" id="-172179281%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-app-api-builder/index.html"><span>Spotify</span><wbr></wbr><span>App</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-172179281%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>credentials<span class="token operator">: </span><a href="-spotify-credentials/index.html">SpotifyCredentials</a><span class="token operator"> = </span>SpotifyCredentials()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>authorization<span class="token operator">: </span><a href="-spotify-user-authorization/index.html">SpotifyUserAuthorization</a><span class="token operator"> = </span>SpotifyUserAuthorization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>options<span class="token operator">: </span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token operator"> = </span>SpotifyApiOptions()</span></span><span class="token punctuation">)</span> : <a href="-i-spotify-app-api-builder/index.html">ISpotifyAppApiBuilder</a></div><div class="brief "><p class="paragraph"><a href="-spotify-app-api/index.html">SpotifyAppApi</a> builder for api creation using client authorization</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="167834658%2FClasslikes%2F788909594" anchor-label="SpotifyClientApi" id="167834658%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-client-api/index.html"><span>Spotify</span><wbr></wbr><span>Client</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="167834658%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-spotify-client-api/index.html">SpotifyClientApi</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>usesPkceAuth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">enableDefaultTokenRefreshProducerIfNoneExists<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">spotifyApiOptions<span class="token operator">: </span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a></span></span><span class="token punctuation">)</span> : <a href="-spotify-api/index.html">SpotifyApi</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-client-api/index.html">SpotifyClientApi</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">An API instance created through client authentication, with access to private information managed through the scopes exposed in <span data-unresolved-link="com.adamratzman.spotify/SpotifyClientApi/token/#/PointingToDeclaration/">token</span></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-111632379%2FClasslikes%2F788909594" anchor-label="SpotifyClientApiBuilder" id="-111632379%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-client-api-builder/index.html"><span>Spotify</span><wbr></wbr><span>Client</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-111632379%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>credentials<span class="token operator">: </span><a href="-spotify-credentials/index.html">SpotifyCredentials</a><span class="token operator"> = </span>SpotifyCredentials()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>authorization<span class="token operator">: </span><a href="-spotify-user-authorization/index.html">SpotifyUserAuthorization</a><span class="token operator"> = </span>SpotifyUserAuthorization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>options<span class="token operator">: </span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token operator"> = </span>SpotifyApiOptions()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>usesPkceAuth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-i-spotify-client-api-builder/index.html">ISpotifyClientApiBuilder</a></div><div class="brief "><p class="paragraph"><a href="-spotify-client-api/index.html">SpotifyClientApi</a> builder for api creation using client authorization</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1947591659%2FClasslikes%2F788909594" anchor-label="SpotifyCredentials" id="-1947591659%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-credentials/index.html"><span>Spotify</span><wbr></wbr><span><span>Credentials</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1947591659%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-spotify-credentials/index.html">SpotifyCredentials</a></div><div class="brief "><p class="paragraph">A holder for application-specific credentials</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1423189470%2FClasslikes%2F788909594" anchor-label="SpotifyException" id="-1423189470%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-exception/index.html"><span>Spotify</span><wbr></wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1423189470%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-spotify-exception/index.html">SpotifyException</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html">Exception</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1480889906%2FClasslikes%2F788909594" anchor-label="SpotifyImplicitGrantApi" id="-1480889906%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-implicit-grant-api/index.html"><span>Spotify</span><wbr></wbr><span>Implicit</span><wbr></wbr><span>Grant</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1480889906%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-spotify-implicit-grant-api/index.html">SpotifyImplicitGrantApi</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token punctuation">, </span></span><span class="parameter ">spotifyApiOptions<span class="token operator">: </span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a></span></span><span class="token punctuation">)</span> : <a href="-spotify-client-api/index.html">SpotifyClientApi</a></div><div class="brief "><p class="paragraph">An API instance created through implicit grant flow, with access to private information managed through the scopes exposed in <span data-unresolved-link="com.adamratzman.spotify/SpotifyImplicitGrantApi/token/#/PointingToDeclaration/">token</span>. <span data-unresolved-link="com.adamratzman.spotify/SpotifyImplicitGrantApi/token/#/PointingToDeclaration/">token</span> is not refreshable and is only accessible for limited time.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1395244825%2FClasslikes%2F788909594" anchor-label="SpotifyRestAction" id="-1395244825%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-rest-action/index.html"><span>Spotify</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1395244825%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-rest-action/index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Provides a uniform interface to retrieve, whether synchronously or asynchronously, <a href="-spotify-rest-action/index.html">T</a> from Spotify</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-713262147%2FClasslikes%2F788909594" anchor-label="SpotifyScope" id="-713262147%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-scope/index.html"><span>Spotify</span><wbr></wbr><span><span>Scope</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-713262147%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-spotify-scope/index.html">SpotifyScope</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-spotify-scope/index.html">SpotifyScope</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Scopes provide Spotify users using third-party apps the confidence that only the information they choose to share will be shared, and nothing more.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-252234525%2FClasslikes%2F788909594" anchor-label="SpotifyUserAuthorization" id="-252234525%2FClasslikes%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spotify-user-authorization/index.html"><span>Spotify</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Authorization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-252234525%2FClasslikes%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-spotify-user-authorization/index.html">SpotifyUserAuthorization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>authorizationCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>tokenString<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>token<span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>refreshTokenString<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>pkceCodeVerifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">User-defined authorization parameters</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="257088385%2FFunctions%2F788909594" anchor-label="getSpotifyAuthorizationUrl" id="257088385%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-spotify-authorization-url.html"><span>get</span><wbr></wbr><span>Spotify</span><wbr></wbr><span>Authorization</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="257088385%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-spotify-authorization-url.html"><span class="token function">getSpotifyAuthorizationUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>scopes<span class="token operator">: </span><a href="-spotify-scope/index.html">SpotifyScope</a><span class="token punctuation">, </span></span><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">isImplicitGrantFlow<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">shouldShowDialog<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">state<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Get the authorization url for the provided <a href="get-spotify-authorization-url.html">clientId</a> and <a href="get-spotify-authorization-url.html">redirectUri</a> application settings, when attempting to authorize with specified <a href="get-spotify-authorization-url.html">scopes</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-385431495%2FFunctions%2F788909594" anchor-label="getSpotifyPkceAuthorizationUrl" id="-385431495%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-spotify-pkce-authorization-url.html"><span>get</span><wbr></wbr><span>Spotify</span><wbr></wbr><span>Pkce</span><wbr></wbr><span>Authorization</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-385431495%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-spotify-pkce-authorization-url.html"><span class="token function">getSpotifyPkceAuthorizationUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>scopes<span class="token operator">: </span><a href="-spotify-scope/index.html">SpotifyScope</a><span class="token punctuation">, </span></span><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">codeChallenge<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">state<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Get the PKCE authorization url for the provided <a href="get-spotify-pkce-authorization-url.html">clientId</a> and <a href="get-spotify-pkce-authorization-url.html">redirectUri</a> application settings, when attempting to authorize with specified <a href="get-spotify-pkce-authorization-url.html">scopes</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="412901927%2FFunctions%2F788909594" anchor-label="getSpotifyPkceCodeChallenge" id="412901927%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-spotify-pkce-code-challenge.html"><span>get</span><wbr></wbr><span>Spotify</span><wbr></wbr><span>Pkce</span><wbr></wbr><span>Code</span><wbr></wbr><span><span>Challenge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="412901927%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-spotify-pkce-code-challenge.html"><span class="token function">getSpotifyPkceCodeChallenge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">codeVerifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">A utility to get the pkce code challenge for a corresponding code verifier. Only available on JVM/Android</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-423393885%2FFunctions%2F788909594" anchor-label="refreshSpotifyClientToken" id="-423393885%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refresh-spotify-client-token.html"><span>refresh</span><wbr></wbr><span>Spotify</span><wbr></wbr><span>Client</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-423393885%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="refresh-spotify-client-token.html"><span class="token function">refreshSpotifyClientToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">refreshToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">usesPkceAuth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a></div><div class="brief "><p class="paragraph">Refresh a Spotify client token</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-935071079%2FFunctions%2F788909594" anchor-label="refreshSpotifyClientTokenRestAction" id="-935071079%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refresh-spotify-client-token-rest-action.html"><span>refresh</span><wbr></wbr><span>Spotify</span><wbr></wbr><span>Client</span><wbr></wbr><span>Token</span><wbr></wbr><span>Rest</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-935071079%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="refresh-spotify-client-token-rest-action.html"><span class="token function">refreshSpotifyClientTokenRestAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">refreshToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">usesPkceAuth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-rest-action/index.html">SpotifyRestAction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Refresh a Spotify client token</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-862252193%2FFunctions%2F788909594" anchor-label="spotifyAppApi" id="-862252193%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="spotify-app-api.html"><span>spotify</span><wbr></wbr><span>App</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-862252193%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-app-api.html"><span class="token function">spotifyAppApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a> by providing a builder initialization <a href="spotify-app-api.html">block</a>.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-app-api.html"><span class="token function">spotifyAppApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a> using a Spotify <a href="spotify-app-api.html">clientId</a> and <a href="spotify-app-api.html">clientSecret</a>.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-app-api.html"><span class="token function">spotifyAppApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a> using a Spotify <a href="spotify-app-api.html">clientId</a> and <a href="spotify-app-api.html">clientSecret</a>, with the ability to configure the api settings by providing a builder initialization <a href="spotify-app-api.html">block</a></p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-app-api.html"><span class="token function">spotifyAppApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">authorization<span class="token operator">: </span><a href="-spotify-user-authorization/index.html">SpotifyUserAuthorization</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-app-api.html"><span class="token function">spotifyAppApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-app-api-builder/index.html">SpotifyAppApiBuilder</a> using a <a href="../com.adamratzman.spotify.models/-token/index.html">Token</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1837265259%2FFunctions%2F788909594" anchor-label="spotifyClientApi" id="1837265259%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="spotify-client-api.html"><span>spotify</span><wbr></wbr><span>Client</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1837265259%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-api.html"><span class="token function">spotifyClientApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a> by providing a builder initialization <a href="spotify-client-api.html">block</a></p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-api.html"><span class="token function">spotifyClientApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a> using a Spotify <a href="spotify-client-api.html">clientId</a>, <a href="spotify-client-api.html">clientSecret</a>, and <a href="spotify-client-api.html">redirectUri</a>.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-api.html"><span class="token function">spotifyClientApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a> using a Spotify <a href="spotify-client-api.html">clientId</a>, <a href="spotify-client-api.html">clientSecret</a>, and <a href="spotify-client-api.html">redirectUri</a>, with the ability to configure the api settings by providing a builder initialization <a href="spotify-client-api.html">block</a></p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-api.html"><span class="token function">spotifyClientApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">authorization<span class="token operator">: </span><a href="-spotify-user-authorization/index.html">SpotifyUserAuthorization</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-api.html"><span class="token function">spotifyClientApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a> using a Spotify <a href="spotify-client-api.html">clientId</a>, <a href="spotify-client-api.html">clientSecret</a>, and <a href="spotify-client-api.html">redirectUri</a>, with an existing <a href="-spotify-user-authorization/index.html">SpotifyUserAuthorization</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1631179674%2FFunctions%2F788909594" anchor-label="spotifyClientPkceApi" id="1631179674%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="spotify-client-pkce-api.html"><span>spotify</span><wbr></wbr><span>Client</span><wbr></wbr><span>Pkce</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1631179674%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-pkce-api.html"><span class="token function">spotifyClientPkceApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">authorization<span class="token operator">: </span><a href="-spotify-user-authorization/index.html">SpotifyUserAuthorization</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-pkce-api.html"><span class="token function">spotifyClientPkceApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-pkce-api.html"><span class="token function">spotifyClientPkceApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">authorizationCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">pkceCodeVerifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-client-pkce-api.html"><span class="token function">spotifyClientPkceApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">authorizationCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">pkceCodeVerifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-client-api-builder/index.html">SpotifyClientApiBuilder</a>. This is for <strong>PKCE authorization</strong>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-248305649%2FFunctions%2F788909594" anchor-label="spotifyImplicitGrantApi" id="-248305649%2FFunctions%2F788909594" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="spotify-implicit-grant-api.html"><span>spotify</span><wbr></wbr><span>Implicit</span><wbr></wbr><span>Grant</span><wbr></wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-248305649%2FFunctions%2F788909594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-implicit-grant-api.html"><span class="token function">spotifyImplicitGrantApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-implicit-grant-api/index.html">SpotifyImplicitGrantApi</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="spotify-implicit-grant-api.html"><span class="token function">spotifyImplicitGrantApi</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="../com.adamratzman.spotify.models/-token/index.html">Token</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="-spotify-api-options/index.html">SpotifyApiOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-spotify-implicit-grant-api/index.html">SpotifyImplicitGrantApi</a></div><div class="brief "><p class="paragraph">Instantiate a new <a href="-spotify-implicit-grant-api/index.html">SpotifyImplicitGrantApi</a> using a Spotify <a href="spotify-implicit-grant-api.html">clientId</a>, and <a href="spotify-implicit-grant-api.html">token</a> retrieved from the implicit grant flow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
